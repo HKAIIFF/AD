@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale极.0">
     <title>香港AI国际电影节 AI原生广告大赛 - 品牌合作方案</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@
             animation: logoGlow 3s ease-in-out infinite alternate;
         }
         
-        @keyframes logoGlow {
+        @keyframes logo极ow {
             0% { text-shadow: 0 0 10px rgba(0, 212, 255, 0.3); }
             100% { text-shadow: 0 0 25px rgba(0, 212, 255, 0.6), 0 0 35px rgba(123, 104, 238, 0.4); }
         }
@@ -406,6 +406,10 @@
             .hero-content {
                 padding-top: 30px;
             }
+            
+            .grid-cols-4 {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
         
         @media (max-width: 480px) {
@@ -424,6 +428,56 @@
             .stats-number {
                 font-size: 2rem;
             }
+            
+            .grid-cols-4 {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .resource-card {
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10极 25px rgba(0, 212, 255, 0.2);
+        }
+        
+        .festival-ecosystem {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(123, 104, 238, 0.1));
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(123, 104, 238, 0.3);
+        }
+        
+        .marathon-card {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 255, 136, 0.1));
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid rgba(0, 255, 136, 0.3);
+        }
+        
+        .marketplace-card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 107, 107, 0.1));
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+        
+        .node-event {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 255, 136, 0.1));
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid rgba(0, 255, 136, 0.3);
         }
     </style>
 </head>
@@ -448,7 +502,10 @@
                 <a href="#partnership" class="hover:text-blue-400 transition">合作方案</a>
                 <a href="#timeline" class="hover:text-blue-400 transition">赛事时间</a>
                 <a href="#awards" class="hover:text-blue-400 transition">奖项设置</a>
+                <a href="#resources" class="hover:text-blue-400 transition">资源产品</a>
+                <a href="#events" class="hover:text-blue-400 transition">节点活动</a>
                 <a href="#rules" class="hover:text-blue-400 transition">参赛规则</a>
+                <a href="#market" class="hover:text-blue-400 transition">市场机会</a>
                 <a href="#contact" class="hover:text-blue-400 transition">联系我们</a>
             </div>
             <div class="flex items-center space-x-4">
@@ -472,7 +529,10 @@
             <a href="#partnership" class="text-xl hover:text-blue-400 transition">合作方案</a>
             <a href="#timeline" class="text-xl hover:text-blue-400 transition">赛事时间</a>
             <a href="#awards" class="text-xl hover:text-blue-400 transition">奖项设置</a>
+            <a href="#resources" class="text-xl hover:text-blue-400 transition">资源产品</a>
+            <a href="#events" class="text-xl hover:text-blue-400 transition">节点活动</a>
             <a href="#rules" class="text-xl hover:text-blue-400 transition">参赛规则</a>
+            <a href="#market" class="text-xl hover:text-blue-400 transition">市场机会</a>
             <a href="#contact" class="text-xl hover:text-blue-400 transition">联系我们</a>
             <div class="pt-6 border-t border-gray-700">
                 <button class="btn-gold w-full py-3 rounded-lg font-bold text-center">
@@ -609,6 +669,39 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- 电影节生态说明 -->
+            <div class="festival-ecosystem mt-16 p-8 animate-slide-up">
+                <h3 class="text-3xl font-bold mb-6 gradient-text text-center">香港AI国际电影节生态</h3>
+                <div class="grid grid-cols-1 md:极rid-cols-3 gap-8">
+                    <div class="text-center">
+                        <i class="fas fa-film text-4xl text-blue-400 mb-4"></i>
+                        <h4 class="text-xl font-semibold mb-3">电影节主竞赛单元</h4>
+                        <p class="text-gray-300">
+                            大赛获奖作品直通香港AI国际电影节主竞赛单元，获得全球展映机会
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-brain text-4xl text-green-400 mb-4"></i>
+                        <h4 class="text-xl font-semibold mb-3">AI创意学院</h4>
+                        <p class="text-gray-300">
+                            香港AI电影学院提供专业课程与认证，培养新一代AI创意人才
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-globe-asia text-4xl text-purple-400 mb-4"></i>
+                        <h4 class="text-xl font-semibold mb-3">全球发行网络</h4>
+                        <p class="text-gray-300">
+                            利用电影节全球发行渠道，将优秀作品推向国际市场
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-gray-300 max-w-3xl mx-auto">
+                        作为香港AI国际电影节的重要组成部分，AI原生广告大赛不仅是一场竞赛，更是一个连接创意、技术与商业的生态系统。我们为品牌提供从曝光到转化、从参与到主导的全方位价值。
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -734,7 +827,7 @@
                         <h4 class="font-semibold mb-3 text-blue-400">人才优先权</h4>
                         <ul class="feature-list text-sm text-gray-300">
                             <li>提前48小时接触TOP20创作团队</li>
-                            <li>为品牌抢占AI人才先机</li>
+                            <li>为品牌抢占AI人才先极</li>
                         </ul>
                     </div>
                     <a href="#contact" class="btn-primary w-full py-3 rounded-lg font-bold text-center">
@@ -880,123 +973,101 @@
         </div>
     </section>
 
-    <!-- Awards Section -->
-    <section class="py-20 bg-gray-900" id="awards">
+    <!-- Node Events Section (修复后) -->
+    <section class="py-20 bg-gray-900" id="events">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16 animate-fade-in">
-                <h2 class="section-title center gradient-text">奖项设置</h2>
+                <h2 class="section-title center gradient-text">节点活动</h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    展示AI技术在广告领域的突破性应用，技术颠覆性 × 创意感染力 × 人文可持续性
+                    增强曝光和内容深度，创造更多商业价值
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- 年度大赛全场大奖 -->
-                <div class="card p-8 text-center animate-slide-up border-2 border-yellow-400">
-                    <div class="text-yellow-400 mb-4">
-                        <i class="fas fa-crown text-4xl"></i>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- 48小时创意马拉松 -->
+                <div class="node-event animate-slide-up">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-500 text-white font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            48
+                        </div>
+                        <h3 class="text-2xl font-bold gradient-text">48小时AI创意马拉松</h3>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-yellow-400">大赛全场大奖</h3>
-                    <div class="text-2xl font-bold text-yellow-400 mb-4">20万元</div>
-                    <p class="text-gray-300 text-sm mb-4">
-                        颁发给总分最高的作品，完美融合品牌理念、创意执行和技术创新，代表AI原生品牌未来主义的最高成就。
+                    <p class="text-gray-300 mb-6">
+                        在10月创作狂欢期间，举办48小时限时创作挑战赛。品牌方可以设置特定主题挑战，参赛团队需在48小时内使用AI工具创作完整广告作品。
                     </p>
-                    <ul class="feature-list text-sm text-gray-300">
-                        <li>现金奖励20万元</li>
-                        <li>技术工具礼包</li>
-                        <li>广告主/投资人见面机会</li>
-                    </ul>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-blue-500 bg-opacity-20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-400 mb-2">品牌价值</h4>
+                            <p class="text-sm text-gray-300">深度参与创作过程，获得第一手用户洞察</p>
+                        </div>
+                        <div class="bg-green-500 bg-opacity-20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-400 mb-2">曝光机会</h4>
+                            <p class="text-sm text-gray-300">全程直播创作过程，吸引百万观众</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <div class="text-sm text-gray-400">赞助权益</div>
+                            <div class="text-yellow-400 font-semibold">独家冠名权 | 主题设置权 | 评委席位</div>
+                        </div>
+                        <a href="#contact" class="bg-purple-500 px-4 py-2 rounded-full text-sm font-semibold">
+                            立即咨询
+                        </a>
+                    </div>
                 </div>
                 
-                <!-- 金铅笔奖 -->
-                <div class="card p-8 text-center animate-slide-up">
-                    <div class="text-yellow-400 mb-4">
-                        <i class="fas fa-pencil-alt text-4xl"></i>
+                <!-- AI创意市集 -->
+                <div class="node-event animate-slide-up">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-store text-3xl text-yellow-400 mr-4"></i>
+                        <h3 class="text-2xl font-bold gradient-text">AI创意市集</h3>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-yellow-400">金铅笔奖（生成式共生）</h3>
-                    <div class="text-lg font-bold text-green-400 mb-4">1名</div>
-                    <p class="text-gray-300 text-sm">
-                        颁发给将品牌精髓无缝、深刻融入生成世界与叙事结构的作品，展现品牌与创意的完美结合。
+                    <p class="text-gray-300 mb-6">
+                        在9月AI造物主招募期间，举办线下AI创意市集。集AI工具展示、技术工作坊、品牌互动体验于一体，打造沉浸式AI创意体验空间。
                     </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-yellow-500 bg-opacity-20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-yellow-400 mb-2">品牌价值</h4>
+                            <p class="text-sm text-gray-300">直接触达核心创作者社群，展示品牌技术实力</p>
+                        </div>
+                        <div class="bg-red-500 bg-opacity-20 p-4 rounded-lg">
+                            <h4 class="font-semibold text-red-400 mb-2">曝光机会</h4>
+                            <p class="text-sm text-gray-300">线上线下联动，覆盖50+媒体，预计10万+现场观众</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <div class="text-sm text-gray-400">赞助权益</div>
+                            <div class="text-yellow-400 font-semibold">主题展区 | 工作坊冠名 | 媒体专访</div>
+                        </div>
+                        <a href="#contact" class="bg-red-500 px-4 py-2 rounded-full text-sm font-semibold">
+                            立即咨询
+                        </a>
+                    </div>
                 </div>
-                
-                <div class="card p-8 text-center animate-slide-up">
-                    <div class="text-blue-400 mb-4">
-                        <i class="fas fa-mouse text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-blue-400">金铅笔奖（交互式体验）</h3>
-                    <div class="text-lg font-bold text-green-400 mb-4">1名</div>
-                    <p class="text-gray-300 text-sm">
-                        颁发给在观众互动、个性化或动态内容方面最具吸引力和创新性的作品。
-                    </p>
+            </div>
+            
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card p-6 text-center animate-slide-up">
+                    <i class="fas fa-vr-cardboard text-3xl text-purple-400 mb-4"></i>
+                    <h4 class="text-lg font-semibold mb-3">元宇宙品牌展馆</h4>
+                    <p class="text-gray-300 text-sm">在虚拟世界中打造品牌专属展馆，365天不间断展示品牌AI创意作品，吸引全球观众参观互动。</p>
                 </div>
-                
-                <div class="card p-8 text-center animate-slide-up">
-                    <div class="text-purple-400 mb-4">
-                        <i class="fas fa-robot text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-purple-400">金铅笔奖（最佳品牌即角色）</h3>
-                    <div class="text-lg font-bold text-green-400 mb-4">1名</div>
-                    <p class="text-gray-300 text-sm">
-                        颁发给将品牌AI驱动的数字人或IP作为交互式角色，并取得最富创意成果的作品。
-                    </p>
+                <div class="card p-6 text-center animate-slide-up">
+                    <i class="fas fa-microphone-alt text-3xl text-blue-400 mb-4"></i>
+                    <h4 class="text-lg font-semibold mb-3">AI创意大师课</h4>
+                    <p class="text-gray-300 text-sm">由行业领袖和获奖团队主讲，品牌可冠名系列课程，建立行业教育者形象。</p>
                 </div>
-                
-                <div class="card p-8 text-center animate-slide-up">
-                    <div class="text-green-400 mb-4">
-                        <i class="fas fa-code text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-green-400">金铅笔奖（创意提示词与流程工艺）</h3>
-                    <div class="text-lg font-bold text-green-400 mb-4">1名</div>
-                    <p class="text-gray-300 text-sm">
-                        颁发给通过最复杂、最巧妙的提示词和技术组合，实现独特创意愿景的作品。
-                    </p>
-                </div>
-                
-                <div class="card p-8 text-center animate-slide-up">
-                    <div class="text-red-400 mb-4">
-                        <i class="fas fa-heart text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-red-400">观众奖（观众选择）</h3>
-                    <div class="text-lg font-bold text-purple-400 mb-4">前3名</div>
-                    <p class="text-gray-300 text-sm">
-                        公众投票，由公众在线体验交互式作品后投票选出最具吸引力的作品。
-                    </p>
-                </div>
-                
-                <!-- 提名奖 -->
-                <div class="card p-8 text-center animate-slide-up">
-                    <div class="text-gray-400 mb-4">
-                        <i class="fas fa-certificate text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-400">提名奖</h3>
-                    <div class="text-lg font-bold text-blue-400 mb-4">20名</div>
-                    <p class="text-gray-300 text-sm">
-                        展示AI技术在广告领域的突破性应用，同时具备艺术感染力。不只评选"好广告"，更定义"未来广告的形态"。
-                    </p>
-                </div>
-                
-                <!-- 特别奖项 -->
-                <div class="card p-8 text-center animate-slide-up border-2 border-purple-400">
-                    <div class="text-purple-400 mb-4">
-                        <i class="fas fa-star text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-purple-400">技术卓越奖</h3>
-                    <div class="text-lg font-bold text-purple-400 mb-4">品牌赞助</div>
-                    <p class="text-gray-300 text-sm mb-4">
-                        由品牌赞助，颁发给在使用该工具在实时渲染、物理模拟和沉浸感方面实现最惊艳、解锁最前沿技术应用的作品。
-                    </p>
-                    <ul class="feature-list text-sm text-gray-300">
-                        <li>获奖者将获得品牌提供的奖励</li>
-                        <li>技术培训机会</li>
-                        <li>助力在技术层面取得更大突破</li>
-                    </ul>
+                <div class="card p-6 text-center animate-slide-up">
+                    <i class="fas fa-trophy text-3xl text-yellow-400 mb-4"></i>
+                    <h4 class="text-lg font-semibold mb-3">全球路演计划</h4>
+                    <p class="text-gray-300 text-sm">携获奖作品在全球10个创意城市巡回展示，强化品牌国际影响力。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Rules Section -->
+    <!-- 参赛规则及奖项设置 Section -->
     <section class="py-20" id="rules">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16 animate-fade-in">
@@ -1150,7 +1221,7 @@
         </div>
     </section>
 
-    <!-- Market Opportunity Section -->
+    <!-- 巨大的市场机会 Section -->
     <section class="py-20 bg-gradient-to-r from-blue-900 to-purple-900" id="market">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16 animate-fade-in">
@@ -1174,7 +1245,7 @@
                     <div class="text-5xl font-bold gradient-text mb-4">34%</div>
                     <h3 class="text-xl font-semibold mb-2">亚太市场占比</h3>
                     <p class="text-gray-300">中国领航亚太地区</p>
-                    <div class="mt-4">
+                    <div class极="mt-4">
                         <span class="text-blue-400 font-semibold">最高增长地区</span>
                     </div>
                 </div>
@@ -1230,6 +1301,234 @@
                             <p class="text-sm">冠名将列入香港AI国际电影节AI原生广告大赛委员会创始名单，享受永久荣誉与尊贵地位，奠定品牌在行业内的领导地位。</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="py-20" id="resources">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="section-title center gradient-text">大赛资源产品包</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    整合官方媒体、KOL平台资源，创造最大化商务价值
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- 媒体传播包 -->
+                <div class="card p-8 animate-slide-up">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-bullhorn text-4xl text-blue-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">媒体传播资源包</h3>
+                        <div class="text-xl font-bold text-yellow-400 mb-4">50万元起</div>
+                    </div>
+                    <ul class="feature-list text-sm text-gray-300 mb-6">
+                        <li>主流媒体深度报道（新浪、腾讯、网易等）</li>
+                        <li>10家财经科技类媒体专访机会</li>
+                        <li>官方新闻稿全球分发（覆盖200+媒体）</li>
+                        <li>大赛专题页面品牌专区展示</li>
+                        <li>社交媒体话题运营（3个热搜话题）</li>
+                    </ul>
+                    <div class="bg-blue-500 bg-opacity-10 p-4 rounded-lg mb-6">
+                        <p class="text-blue-300 text-sm">
+                            适合：寻求广泛曝光、建立行业知名度的品牌
+                        </p>
+                    </div>
+                    <a href="#contact" class="btn-primary w-full py-3 rounded-lg font-bold text-center">
+                        立即预订
+                    </a>
+                </div>
+                
+                <!-- KOL矩阵包 -->
+                <div class="card p-8 animate-slide-up">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-users text-4xl text-purple-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">KOL影响力资源包</h3>
+                        <div class="text-xl font-bold text-yellow-400 mb-4">80万元起</div>
+                    </div>
+                    <ul class="feature-list text-sm text-gray-300 mb-6">
+                        <li>覆盖抖音、小红书、B站、微博等平台</li>
+                        <li>50+垂直领域KOL（科技、创意、营销类）</li>
+                        <li>定制化内容创作（开箱测评、技术解析等）</li>
+                        <li>3场KOL直播专场（场均观众10万+）</li>
+                        <li>KOL线下见面会参与名额</li>
+                    </ul>
+                    <div class="bg-purple-500 bg-opacity-10 p-4 rounded-lg mb-6">
+                        <p class="text-purple-300 text-sm">
+                            适合：希望精准触达年轻创意人群的品牌
+                        </p>
+                    </div>
+                    <a href="#contact" class="btn-primary w-full py-3 rounded-lg font-bold text-center">
+                        立即预订
+                    </a>
+                </div>
+                
+                <!-- 数据洞察包 -->
+                <div class="card p-8 animate-slide-up">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-chart-bar text-4xl text-green-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">数据洞察资源包</h3>
+                        <div class="text-xl font-bold text-yellow-400 mb-4">120万元起</div>
+                    </div>
+                    <ul class="feature-list text-sm text-gray-300 mb-6">
+                        <li>全赛道消费者行为数据报告</li>
+                        <li>AI创意趋势季度报告（全年4份）</li>
+                        <li>竞品分析及品牌健康度评估</li>
+                        <li>用户情感分析及内容偏好报告</li>
+                        <li>定制化数据咨询工作坊（2场）</li>
+                    </ul>
+                    <div class="bg-green-500 bg-opacity-10 p-4 rounded-lg mb-6">
+                        <p class="text-green-300 text-sm">
+                            适合：重视数据驱动决策、市场研究的品牌
+                        </p>
+                    </div>
+                    <a href="#contact" class="btn-primary w-full py-3 rounded-lg font-bold text-center">
+                        立即预订
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <h3 class="text-2xl font-bold mb-6 gradient-text">资源组合示例</h3>
+                <div class="bg-gray-800 rounded-xl p-6 max-w-4xl mx-auto animate-fade-in">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-blue-900 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-300 mb-2">黄金组合</h4>
+                            <p class="text-sm">媒体包 + KOL包</p>
+                            <div class="text-yellow-400 font-bold mt-2">120万元</div>
+                        </div>
+                        <div class="bg-purple-900 p-4 rounded-lg">
+                            <h4 class="font-semibold text-purple-300 mb-2">铂金组合</h4>
+                            <p class="text-sm">媒体包 + KOL包 + 数据包</p>
+                            <div class="text-yellow-400 font-bold mt-2">220万元</div>
+                        </div>
+                        <div class="bg-green-900 p-4 rounded-lg">
+                            <h4 class="font-semibold text-green-300 mb-2">钻石组合</h4>
+                            <p class="text-sm">全套资源 + 定制服务</p>
+                            <div class="text-yellow-400 font-bold mt-2">300万元起</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mt-6 text-sm">
+                        所有资源包均可根据品牌需求进行个性化定制，提供专属解决方案
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="py-20 bg-gray-900" id="awards">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="section-title center gradient-text">奖项设置</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    展示AI技术在广告领域的突破性应用，技术颠覆性 × 创意感染力 × 人文可持续性
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 年度大赛全场大奖 -->
+                <div class="card p-8 text-center animate-slide-up border-2 border-yellow-400">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-crown text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-yellow-400">大赛全场大奖</h3>
+                    <div class="text-2xl font-bold text-yellow-400 mb-4">20万元</div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        颁发给总分最高的作品，完美融合品牌理念、创意执行和技术创新，代表AI原生品牌未来主义的最高成就。
+                    </p>
+                    <ul class="feature-list text-sm text-gray-300">
+                        <li>现金奖励20万元</li>
+                        <li>技术工具礼包</li>
+                        <li>广告主/投资人见面机会</li>
+                    </ul>
+                </div>
+                
+                <!-- 金铅笔奖 -->
+                <div class="card p-8 text-center animate-slide-up">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-pencil-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-yellow-400">金铅笔奖（生成式共生）</h3>
+                    <div class="text-lg font-bold text-green-400 mb-4">1名</div>
+                    <p class="text-gray-300 text-sm">
+                        颁发给将品牌精髓无缝、深刻融入生成世界与叙事结构的作品，展现品牌与创意的完美结合。
+                    </p>
+                </div>
+                
+                <div class="card p-8 text-center animate-slide-up">
+                    <div class="text-blue-400 mb-4">
+                        <i class="fas fa-mouse text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-400">金铅笔奖（交互式体验）</h3>
+                    <div class="text-lg font-bold text-green-400 mb-4">1名</div>
+                    <p class="text-gray-300 text-sm">
+                        颁发给在观众互动、个性化或动态内容方面最具吸引力和创新性的作品。
+                    </p>
+                </div>
+                
+                <div class="card p-8 text-center animate-slide-up">
+                    <div class="text-purple-400 mb-4">
+                        <i class="fas fa-robot text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-purple-400">金铅笔奖（最佳品牌即角色）</h3>
+                    <div class="text-lg font-bold text-green-400 mb-4">1名</div>
+                    <p class="text-gray-300 text-sm">
+                        颁发给将品牌AI驱动的数字人或IP作为交互式角色，并取得最富创意成果的作品。
+                    </p>
+                </div>
+                
+                <div class="card p-8 text-center animate-slide-up">
+                    <div class="text-green-400 mb-4">
+                        <i class="fas fa-code text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-400">金铅笔奖（创意提示词与流程工艺）</h3>
+                    <div class="text-lg font-bold text-green-400 mb-4">1名</div>
+                    <p class="text-gray-300 text-sm">
+                        颁发给通过最复杂、最巧妙的提示词和技术组合，实现独特创意愿景的作品。
+                    </p>
+                </div>
+                
+                <div class="card p-8 text-center animate-slide-up">
+                    <div class="text-red-400 mb-4">
+                        <i class="fas fa-heart text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-red-400">观众奖（观众选择）</h3>
+                    <div class="text-lg font-bold text-purple-400 mb-4">前3名</div>
+                    <p class="text-gray-300 text-sm">
+                        公众投票，由公众在线体验交互式作品后投票选出最具吸引力的作品。
+                    </p>
+                </div>
+                
+                <!-- 提名奖 -->
+                <div class="card p-8 text-center animate-slide-up">
+                    <div class="text-gray-400 mb-4">
+                        <i class="fas fa-certificate text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-400">提名奖</h3>
+                    <div class="text-lg font-bold text-blue-400 mb-4">20名</div>
+                    <p class="text-gray-300 text-sm">
+                        展示AI技术在广告领域的突破性应用，同时具备艺术感染力。不只评选"好广告"，更定义"未来广告的形态"。
+                    </p>
+                </div>
+                
+                <!-- 特别奖项 -->
+                <div class="card p-8 text-center animate-slide-up border-2 border-purple-400">
+                    <div class="text-purple-400 mb-4">
+                        <i class="fas fa-star text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-purple-400">技术卓越奖</h3>
+                    <div class="text-lg font-bold text-purple-400 mb-4">品牌赞助</div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        由品牌赞助，颁发给在使用该工具在实时渲染、物理模拟和沉浸感方面实现最惊艳、解锁最前沿技术应用的作品。
+                    </p>
+                    <ul class="feature-list text-sm text-gray-300">
+                        <li>获奖者将获得品牌提供的奖励</li>
+                        <li>技术培训机会</li>
+                        <li>助力在技术层面取得更大突破</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -1380,10 +1679,10 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4 gradient-text">合作支持</h3>
                     <ul class="space-y-2">
-                        <li><a href="#partnership" class="text-gray-400 hover:text-blue-400 transition-colors">品牌合作</a></li>
-                        <li><a href="#market" class="text-gray-400 hover:text-blue-400 transition-colors">市场机会</a></li>
+                        <li><a href="#resources" class="text-gray-400 hover:text-blue-400 transition-colors">资源产品</a></li>
+                        <li><a href="#events" class="text-gray-400 hover:text-blue-400 transition-colors">节点活动</a></li>
                         <li><a href="#rules" class="text-gray-400 hover:text-blue-400 transition-colors">参赛规则</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-blue-400 transition-colors">联系我们</a></li>
+                        <li><a href="#market" class="text-gray-400 hover:text-blue-400 transition-colors">市场机会</a></li>
                     </ul>
                 </div>
                 <div>
