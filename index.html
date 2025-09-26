@@ -1,30 +1,79 @@
+[file name]: aif-fusion-homepage-fixed.html
+[file content begin]
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIF Learning Platform - Daily 100K AIF Airdrop! 10 Minutes Learning = Up to 100 AIF</title>
-    <meta name="description" content="World's first AI learning mining platform. Daily 100K AIF airdrop in progress. 10 minutes of smart learning can earn up to 100 AIF tokens. Current price $10/AIF. Start today!">
+    <title>AIF.AD - 香港AI國際電影節官方空投平台 | 每日百萬AIF代幣空投，學習即賺取</title>
+    <meta name="description" content="香港AI國際電影節官方空投平台，連接全球頂級AI影視生態，每日百萬AIF代幣空投正在進行！10分鐘智能學習最高可獲得100AIF代幣，現價$10/AIF，今日開涯！">
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --primary: #00ff9d;
-            --secondary: #3498db;
-            --accent: #ff6b35;
+            --primary: #ff6b35;
+            --secondary: #00d2ff;
+            --accent: #ffd700;
             --gold: #ffd700;
+            --red: #ff4757;
             --gradient-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --gradient-text: linear-gradient(90deg, #00ff9d, #3498db, #ff6b35);
+            --gradient-text: linear-gradient(90deg, #ff6b35, #00d2ff, #ffd700);
+            --film-red: #c0392b;
+            --film-gold: #f1c40f;
         }
         
         body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            font-family: 'Inter', 'Noto Sans TC', sans-serif;
+            background: #0a0a0a;
             color: #ffffff;
             overflow-x: hidden;
             line-height: 1.6;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 107, 53, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(0, 210, 255, 0.1) 0%, transparent 20%);
+        }
+        
+        .logo-font {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            font-size: 2.2rem;
+            letter-spacing: 3px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary), var(--gold));
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            position: relative;
+            display: inline-block;
+            animation: logoGlow 3s ease-in-out infinite alternate, gradientShift 8s ease-in-out infinite;
+            line-height: 1;
+        }
+        
+        @keyframes logoGlow {
+            0% { text-shadow: 0 0 20px rgba(255, 107, 53, 0.3); }
+            100% { text-shadow: 0 0 40px rgba(255, 107, 53, 0.8), 0 0 60px rgba(0, 210, 255, 0.6); }
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .logo-sub {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-top: 5px;
+            text-align: left;
+            opacity: 0.9;
+            line-height: 1.1;
         }
         
         .gradient-text {
@@ -36,23 +85,13 @@
         }
         
         .glow-effect {
-            box-shadow: 0 0 30px rgba(0, 255, 157, 0.3);
+            box-shadow: 0 0 30px rgba(255, 107, 53, 0.3);
             animation: glow-pulse 2s ease-in-out infinite alternate;
         }
         
         @keyframes glow-pulse {
-            from { box-shadow: 0 0 20px rgba(0, 255, 157, 0.4); }
-            to { box-shadow: 0 0 40px rgba(0, 255, 157, 0.8); }
-        }
-        
-        .floating-unicorn {
-            animation: float-unicorn 6s ease-in-out infinite;
-        }
-        
-        @keyframes float-unicorn {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            33% { transform: translateY(-20px) rotate(5deg); }
-            66% { transform: translateY(-10px) rotate(-3deg); }
+            from { box-shadow: 0 0 20px rgba(255, 107, 53, 0.4); }
+            to { box-shadow: 0 0 40px rgba(255, 107, 53, 0.8); }
         }
         
         .scroll-text {
@@ -74,8 +113,8 @@
         }
         
         .stats-card {
-            background: linear-gradient(145deg, rgba(0, 255, 157, 0.1), rgba(52, 152, 219, 0.1));
-            border: 1px solid rgba(0, 255, 157, 0.3);
+            background: linear-gradient(145deg, rgba(255, 107, 53, 0.1), rgba(0, 210, 255, 0.1));
+            border: 1px solid rgba(255, 107, 53, 0.3);
             border-radius: 15px;
             padding: 25px;
             text-align: center;
@@ -85,7 +124,7 @@
         
         .stats-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 255, 157, 0.3);
+            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.3);
         }
         
         .cta-button {
@@ -99,13 +138,13 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0, 255, 157, 0.3);
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
             cursor: pointer;
         }
         
         .cta-button:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 255, 157, 0.5);
+            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.5);
         }
         
         .danger-button {
@@ -129,20 +168,66 @@
             margin: 0 10px;
         }
         
-        .feature-card {
-            background: rgba(255, 255, 255, 0.05);
+        .ecosystem-card {
+            background: rgba(26, 32, 44, 0.7);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 20px;
             padding: 30px;
             text-align: center;
             backdrop-filter: blur(15px);
             transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
         
-        .feature-card:hover {
+        .ecosystem-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .ecosystem-card:hover::before {
+            left: 100%;
+        }
+        
+        .ecosystem-card:hover {
             transform: translateY(-15px);
             border-color: var(--primary);
-            box-shadow: 0 25px 50px rgba(0, 255, 157, 0.2);
+            box-shadow: 0 25px 50px rgba(255, 107, 53, 0.2);
+        }
+        
+        .flow-character {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            margin: 0 auto 20px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.7); }
+            70% { box-shadow: 0 0 0 20px rgba(255, 107, 53, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 107, 53, 0); }
+        }
+        
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
         }
         
         .learning-steps {
@@ -153,7 +238,7 @@
         }
         
         .step-card {
-            background: rgba(52, 152, 219, 0.1);
+            background: rgba(0, 210, 255, 0.1);
             border: 2px solid var(--secondary);
             border-radius: 15px;
             padding: 25px;
@@ -184,9 +269,9 @@
             top: 0;
             left: 0;
             right: 0;
-            background: rgba(10, 10, 10, 0.9);
+            background: rgba(10, 10, 10, 0.95);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0, 255, 157, 0.2);
+            border-bottom: 1px solid rgba(255, 107, 53, 0.2);
             z-index: 1000;
             padding: 12px 0;
             height: 80px;
@@ -226,22 +311,6 @@
             75% { transform: translateY(-30px) rotateZ(270deg); }
         }
         
-        .scroll-indicator {
-            position: absolute;
-            bottom: 50px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: var(--primary);
-            font-size: 2rem;
-            animation: bounce 2s infinite;
-        }
-        
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-            40% { transform: translateX(-50%) translateY(-10px); }
-            60% { transform: translateX(-50%) translateY(-5px); }
-        }
-        
         .mobile-menu {
             display: none;
             position: fixed;
@@ -261,7 +330,79 @@
             transform: translateX(0);
         }
         
+        .ai-element {
+            position: absolute;
+            background-color: rgba(255, 107, 53, 0.1);
+            border: 1px solid rgba(255, 107, 53, 0.3);
+            backdrop-filter: blur(5px);
+            padding: 10px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 12px;
+            color: var(--accent);
+            z-index: 3;
+            pointer-events: none;
+            box-shadow: 0 0 15px rgba(255, 107, 53, 0.1);
+        }
+        
+        .data-stream {
+            position: absolute;
+            height: 100px;
+            width: 2px;
+            background: linear-gradient(to bottom, transparent, var(--accent), var(--secondary), transparent);
+            z-index: 0;
+            animation: dataStream 2s linear infinite;
+            opacity: 0.3;
+        }
+        
+        @keyframes dataStream {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100vh); }
+        }
+        
+        .ad-zone {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(0, 210, 255, 0.1));
+            border: 2px dashed rgba(255, 215, 0, 0.5);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .ad-zone::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(transparent, rgba(255, 215, 0, 0.1), transparent);
+            animation: rotate-gradient 4s linear infinite;
+        }
+        
+        @keyframes rotate-gradient {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .ad-content {
+            position: relative;
+            z-index: 1;
+        }
+        
         @media (max-width: 768px) {
+            .logo-font {
+                font-size: 1.8rem;
+                letter-spacing: 2px;
+            }
+            
+            .logo-sub {
+                font-size: 0.6rem;
+                letter-spacing: 1px;
+            }
+            
             .hero-section {
                 padding-top: 100px;
                 min-height: 80vh;
@@ -283,28 +424,43 @@
     </style>
 </head>
 <body>
+    <!-- AI Elements -->
+    <div class="ai-element" style="top: 120px; left: 5%;">
+        LEARN_TO_EARN: ACTIVE <br>
+        FLOW_AI: ONLINE <br>
+        // 學習即挖礦系統運行中
+    </div>
+    
+    <div class="ai-element" style="bottom: 200px; right: 10%;">
+        AIF_REWARDS: DISTRIBUTING <br>
+        USERS_ONLINE: 2,847 <br>
+        // 代幣分發進行中
+    </div>
+    
+    <!-- Data streams -->
+    <div class="data-stream" style="left: 15%; animation-delay: 0s;"></div>
+    <div class="data-stream" style="left: 35%; animation-delay: 0.8s;"></div>
+    <div class="data-stream" style="left: 65%; animation-delay: 1.3s;"></div>
+    <div class="data-stream" style="left: 85%; animation-delay: 2s;"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <div class="floating-unicorn">
-                    <div style="width: 50px; height: 50px; background: linear-gradient(45deg, #00ff9d, #3498db, #ff6b35); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">🦄</div>
-                </div>
-                <div>
-                    <div class="font-bold text-xl gradient-text">AIF Learn to Earn</div>
-                    <div class="text-xs text-gray-400">Powered by Flow AI</div>
-                </div>
+            <div class="flex flex-col items-start">
+                <div class="logo-font text-xl md:text-2xl">AIF.AD</div>
+                <div class="logo-sub text-xs hidden md:block">香港AI國際電影節官方空投平台</div>
             </div>
             
             <div class="hidden md:flex items-center space-x-6">
-                <a href="#learning" class="text-gray-300 hover:text-primary transition">Smart Learning</a>
-                <a href="#rewards" class="text-gray-300 hover:text-primary transition">Reward System</a>
-                <a href="#referral" class="text-gray-300 hover:text-primary transition">Referral Center</a>
-                <a href="#pricing" class="text-gray-300 hover:text-primary transition">Token Pricing</a>
+                <a href="#ecosystem" class="text-gray-300 hover:text-primary transition">生態系統</a>
+                <a href="#learning" class="text-gray-300 hover:text-primary transition">智能學習</a>
+                <a href="#rewards" class="text-gray-300 hover:text-primary transition">獎勵機制</a>
+                <a href="#pricing" class="text-gray-300 hover:text-primary transition">代幣價格</a>
+                <a href="#community" class="text-gray-300 hover:text-primary transition">社群</a>
             </div>
             
             <div class="flex items-center space-x-4">
-                <button class="cta-button text-sm px-6 py-2">Start Learning Now</button>
+                <button class="cta-button text-sm px-6 py-2">立即開始</button>
                 <button class="md:hidden" id="mobile-menu-toggle">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
@@ -320,10 +476,11 @@
             </button>
         </div>
         <div class="space-y-6">
-            <a href="#learning" class="block text-xl">Smart Learning</a>
-            <a href="#rewards" class="block text-xl">Reward System</a>
-            <a href="#referral" class="block text-xl">Referral Center</a>
-            <a href="#pricing" class="block text-xl">Token Pricing</a>
+            <a href="#ecosystem" class="block text-xl">生態系統</a>
+            <a href="#learning" class="block text-xl">智能學習</a>
+            <a href="#rewards" class="block text-xl">獎勵機制</a>
+            <a href="#pricing" class="block text-xl">代幣價格</a>
+            <a href="#community" class="block text-xl">社群</a>
         </div>
     </div>
 
@@ -331,314 +488,525 @@
     <section class="hero-section">
         <!-- Floating Elements -->
         <div class="floating-elements">
-            <div class="floating-coin" style="top: 20%; left: 10%; animation-delay: 0s;">💰</div>
-            <div class="floating-coin" style="top: 60%; left: 80%; animation-delay: 2s;">🪙</div>
+            <div class="floating-coin" style="top: 20%; left: 10%; animation-delay: 0s;">🎭</div>
+            <div class="floating-coin" style="top: 60%; left: 80%; animation-delay: 2s;">🏆</div>
             <div class="floating-coin" style="top: 30%; left: 70%; animation-delay: 4s;">💎</div>
             <div class="floating-coin" style="top: 80%; left: 20%; animation-delay: 6s;">⭐</div>
         </div>
 
         <div class="container mx-auto px-4 relative z-10">
-            <div class="text-center max-w-6xl mx-auto">
-                <!-- Urgent Alert Bar -->
-                <div class="mb-8">
-                    <div class="bg-red-600 text-white px-4 py-2 rounded-full inline-block animate-pulse">
-                        <i class="fas fa-exclamation-triangle mr-2"></i>
-                        <strong>URGENT NOTICE: Today's limit 10,000 spots, already taken</strong>
-                        <span id="taken-spots" class="font-bold">187</span>
-                        <strong>spots!</strong>
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+                <div>
+                    <!-- Official Badge -->
+                    <div class="mb-8">
+                        <div class="bg-gradient-to-r from-red-600 to-gold px-6 py-3 rounded-full inline-block animate-pulse">
+                            <i class="fas fa-certificate mr-2"></i>
+                            <strong>🏆 香港AI國際電影節官方認證空投平台</strong>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Main Headline -->
-                <h1 class="text-4xl md:text-7xl font-black mb-6">
-                    <span class="gradient-text">Daily 100K AIF Airdrop</span><br>
-                    <span class="text-white">In Progress!</span>
-                </h1>
-                
-                <h2 class="text-2xl md:text-4xl mb-8 text-yellow-300 font-bold">
-                    10 Minutes Smart Learning = Up to 100 AIF Tokens
-                </h2>
-
-                <!-- Real-time Stats Scroll -->
-                <div class="bg-black bg-opacity-50 py-4 mb-8 overflow-hidden">
-                    <div class="scroll-text text-green-400 text-lg">
-                        🎉 John** earned 87AIF($870) • Lisa** completed learning and earned 92AIF($920) • Mike** referred friends and earned 150AIF($1,500) • Sarah** today's total earnings 298AIF($2,980) • 
-                        Alex** newcomer first time earned 43AIF($430) • Emma** 7 days consecutive learning bonus 500AIF($5,000) • 
+                    <!-- Urgent Alert Bar -->
+                    <div class="mb-8">
+                        <div class="bg-red-600 text-white px-4 py-2 rounded-full inline-block animate-pulse">
+                            <i class="fas fa-exclamation-triangle mr-2"></i>
+                            <strong>緊急通知：今日限額10,000名額，已佔用</strong>
+                            <span id="taken-spots" class="font-bold">187</span>
+                            <strong>個名額！</strong>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Current Price Display -->
-                <div class="mb-8">
-                    <div class="text-center">
-                        <div class="text-xl text-gray-300 mb-2">AIF Current Price</div>
-                        <div class="flex flex-wrap justify-center items-center">
-                            <span class="price-display" id="current-price">$10.00</span>
-                            <span class="text-green-400 font-bold text-xl mx-4">↗️ +2,400%</span>
-                            <div class="text-sm text-gray-400">
-                                <div>Will rise to <span class="text-yellow-400 font-bold">$105/AIF</span> when reaching 100K users</div>
+                    <h1 class="text-4xl md:text-6xl font-black mb-6">
+                        <span class="gradient-text">Flow AI驅動</span><br>
+                        學習賺取AIF
+                    </h1>
+                    
+                    <h2 class="text-xl md:text-2xl mb-8 text-yellow-300 font-bold">
+                        透過與Flow狐角狸AI的互動學習，深入了解香港AI國際電影節生態系統，完成10輪學習課程，每輪可獲得1-100 AIF代幣獎勵
+                    </h2>
+
+                    <!-- Real-time Stats Scroll -->
+                    <div class="bg-black bg-opacity-50 py-4 mb-8 overflow-hidden">
+                        <div class="scroll-text text-green-400 text-lg">
+                            🎉 張**剛獲得87AIF收益 • 李**完成學習獲得92AIF收益 • 王**推薦好友獲得150AIF收益 • 陳**今日總收益298AIF • 
+                            劉**新手第一次獲得43AIF收益 • 林**連續7天學習獲得獎勵500AIF • 
+                        </div>
+                    </div>
+
+                    <!-- Current Price Display -->
+                    <div class="mb-8">
+                        <div class="text-center">
+                            <div class="text-xl text-gray-300 mb-2">AIF當前價格</div>
+                            <div class="flex flex-wrap justify-center items-center">
+                                <span class="price-display" id="current-price">$10.00</span>
+                                <span class="text-green-400 font-bold text-xl mx-4">↗️ +2,400%</span>
+                                <div class="text-sm text-gray-400">
+                                    <div>用戶數達100萬時將升至 <span class="text-yellow-400 font-bold">$105/AIF</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Countdown Timer -->
-                <div class="mb-12">
-                    <div class="countdown-box max-w-4xl mx-auto">
-                        <h3 class="text-2xl font-bold mb-4 text-gold">⏰ Today's Airdrop Countdown</h3>
-                        <div class="grid grid-cols-4 gap-4 text-center">
-                            <div>
-                                <div class="text-4xl font-black text-primary" id="hours">12</div>
-                                <div class="text-sm text-gray-400">Hours</div>
+                    <!-- Countdown Timer -->
+                    <div class="mb-8">
+                        <div class="countdown-box">
+                            <h3 class="text-xl font-bold mb-4 text-gold">⏰ 今日空投倒數計時</h3>
+                            <div class="grid grid-cols-4 gap-4 text-center">
+                                <div>
+                                    <div class="text-3xl font-black text-primary" id="hours">12</div>
+                                    <div class="text-sm text-gray-400">小時</div>
+                                </div>
+                                <div>
+                                    <div class="text-3xl font-black text-primary" id="minutes">34</div>
+                                    <div class="text-sm text-gray-400">分鐘</div>
+                                </div>
+                                <div>
+                                    <div class="text-3xl font-black text-primary" id="seconds">56</div>
+                                    <div class="text-sm text-gray-400">秒</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-black text-red-400" id="remaining-spots">9,813</div>
+                                    <div class="text-sm text-gray-400">剩餘名額</div>
+                                </div>
                             </div>
-                            <div>
-                                <div class="text-4xl font-black text-primary" id="minutes">34</div>
-                                <div class="text-sm text-gray-400">Minutes</div>
+                            <div class="mt-4 text-center text-yellow-300">
+                                <i class="fas fa-fire mr-2"></i>
+                                <strong>錯過今天，明天價格可能上漲！</strong>
                             </div>
-                            <div>
-                                <div class="text-4xl font-black text-primary" id="seconds">56</div>
-                                <div class="text-sm text-gray-400">Seconds</div>
-                            </div>
-                            <div>
-                                <div class="text-2xl font-black text-red-400" id="remaining-spots">9,813</div>
-                                <div class="text-sm text-gray-400">Spots Left</div>
-                            </div>
-                        </div>
-                        <div class="mt-4 text-center text-yellow-300">
-                            <i class="fas fa-fire mr-2"></i>
-                            <strong>Miss today, tomorrow's price might surge!</strong>
                         </div>
                     </div>
-                </div>
 
-                <!-- CTA Buttons -->
-                <div class="space-y-4 mb-12">
-                    <button class="cta-button danger-button block mx-auto">
-                        <i class="fas fa-rocket mr-3"></i>
-                        Grab AIF Airdrop Now - Free Registration
-                    </button>
-                    <div class="text-center">
-                        <button class="bg-transparent border-2 border-primary px-8 py-3 rounded-full text-primary hover:bg-primary hover:text-white transition">
-                            <i class="fas fa-play mr-2"></i>Watch Others' Earnings Demo
+                    <!-- CTA Buttons -->
+                    <div class="space-y-4 mb-8">
+                        <button class="cta-button danger-button text-lg px-10 py-4 rounded-full">
+                            <i class="fas fa-rocket mr-3"></i>
+                            立即搶奪AIF空投 - 免費註冊
                         </button>
+                        <div class="text-center">
+                            <button class="bg-transparent border-2 border-primary px-8 py-3 rounded-full text-primary hover:bg-primary hover:text-white transition">
+                                <i class="fas fa-play mr-2"></i>觀看他人收益展示
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Key Stats -->
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-blue-400">10輪</div>
+                            <div class="text-sm text-gray-400">學習課程</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-green-400">1-100</div>
+                            <div class="text-sm text-gray-400">AIF/輪獎勵</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-purple-400">每日</div>
+                            <div class="text-sm text-gray-400">一次機會</div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Key Stats -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-                    <div class="stats-card">
-                        <div class="text-3xl font-black text-primary mb-2" id="total-distributed">$125K</div>
-                        <div class="text-sm text-gray-300">Total Distributed Value</div>
+                
+                <div class="text-center">
+                    <div class="flow-character floating">
+                        <i class="fas fa-robot"></i>
                     </div>
-                    <div class="stats-card">
-                        <div class="text-3xl font-black text-secondary mb-2" id="active-users">501</div>
-                        <div class="text-sm text-gray-300">Active Learning Users</div>
-                    </div>
-                    <div class="stats-card">
-                        <div class="text-3xl font-black text-accent mb-2">100AIF</div>
-                        <div class="text-sm text-gray-300">Max Single Reward</div>
-                    </div>
-                    <div class="stats-card">
-                        <div class="text-3xl font-black text-gold mb-2">10 Rounds</div>
-                        <div class="text-sm text-gray-300">Daily Learning Sessions</div>
-                    </div>
-                </div>
-
-                <!-- Social Proof -->
-                <div class="text-center text-gray-400 mb-8">
-                    <div class="mb-4">
-                        <i class="fas fa-shield-alt text-green-400 mr-2"></i>
-                        <span class="text-white font-bold">501</span> users have earned AIF tokens through learning
-                    </div>
-                    <div class="flex justify-center items-center space-x-6 text-sm">
-                        <div class="flex items-center">
-                            <i class="fas fa-star text-yellow-400 mr-1"></i>
-                            <span>4.9/5.0 User Rating</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-lock text-green-400 mr-1"></i>
-                            <span>100% Funds Secure</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-clock text-blue-400 mr-1"></i>
-                            <span>60s Quick Registration</span>
+                    <h3 class="text-2xl font-bold mb-4">重見Flow狐角狸</h3>
+                    <p class="text-gray-300 mb-6">
+                        你的專屬AI學習夥伴，基於香港AI電影學院教學邏輯，提供個性化的互動教學體驗。
+                    </p>
+                    <div class="bg-gray-800 rounded-xl p-4">
+                        <div class="text-left">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-robot text-sm"></i>
+                                </div>
+                                <span class="font-bold">Flow</span>
+                            </div>
+                            <p class="text-gray-300 text-sm">
+                                "你好！我是Flow，你的AI學習伙伴！準備好開始探索香港AI國際電影節的精彩世界了嗎？完成學習就能獲得AIF代幣獎勵哦！"
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section id="learning" class="py-20 bg-black bg-opacity-30">
+    <!-- Stats Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="stats-card">
+                    <i class="fas fa-chart-line text-4xl mb-4 text-gold"></i>
+                    <div class="text-3xl font-bold text-gold">147%</div>
+                    <div class="text-sm text-gray-300">推薦增長</div>
+                </div>
+                <div class="stats-card">
+                    <i class="fas fa-users text-4xl mb-4 text-blue-400"></i>
+                    <div class="text-3xl font-bold text-blue-400" id="active-users">15,847</div>
+                    <div class="text-sm text-gray-300">活躍學習者</div>
+                </div>
+                <div class="stats-card">
+                    <i class="fas fa-coins text-4xl mb-4 text-green-400"></i>
+                    <div class="text-3xl font-bold text-green-400" id="total-distributed">2.8M</div>
+                    <div class="text-sm text-gray-300">AIF已分發</div>
+                </div>
+                <div class="stats-card">
+                    <i class="fas fa-graduation-cap text-4xl mb-4 text-purple-400"></i>
+                    <div class="text-3xl font-bold text-purple-400">89%</div>
+                    <div class="text-sm text-gray-300">完課率</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AIF Ecosystem Section -->
+    <section id="ecosystem" class="py-20 bg-black bg-opacity-30">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">Super Simple 3 Steps to Start Earning</h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    Flow AI smart tutor provides one-on-one teaching. Each session 15-25 minutes of deep learning. AI intelligently allocates 1-100 AIF tokens based on learning quality.
+                <h2 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">香港AI國際電影節生態系統</h2>
+                <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+                    AIF.AD平台是香港AI國際電影節完整生態系統的核心入口，連接教育、創作、市場、發行等全產業鏈條，為全球AI影視產業構建可持續發展的生態閉環。
                 </p>
             </div>
-
-            <div class="learning-steps">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <div class="text-6xl mb-4">📱</div>
-                    <h3 class="text-xl font-bold mb-4">60s Flash Registration</h3>
-                    <p class="text-gray-300">Phone number + verification code, supports WeChat quick login, enter referral code for automatic source recognition</p>
-                    <div class="mt-4 text-sm text-green-400">
-                        <i class="fas fa-clock mr-1"></i>Average registration time: 45s
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 香港AI國際電影節展映競賽 -->
+                <div class="ecosystem-card">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-trophy text-6xl text-yellow-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">香港AI國際電影節展映競賽</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        全球首個專注於AI原生內容的國際電影節，設立多個獎項類別，為AI影視創作者提供展示平台和行業認可。
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-400">核心平台</span>
+                        <div class="text-green-400">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
                 </div>
-
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <div class="text-6xl mb-4">🦄</div>
-                    <h3 class="text-xl font-bold mb-4">Flow AI Conversational Learning</h3>
-                    <p class="text-gray-300">Flow AI tutor conducts conversational teaching, open-ended Q&A tests, multi-round conversation with error correction guidance</p>
-                    <div class="mt-4 text-sm text-blue-400">
-                        <i class="fas fa-brain mr-1"></i>AI personalized adaptive learning progress
+                
+                <!-- 香港AI電影學院 -->
+                <div class="ecosystem-card">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-graduation-cap text-6xl text-blue-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">香港AI電影學院</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        提供AI影視創作的專業教育培訓，涵蓋技術應用、創意思維、產業實踐等多個維度的完整課程體系。
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-400">教育基礎</span>
+                        <div class="text-green-400">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
                 </div>
-
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <div class="text-6xl mb-4">💰</div>
-                    <h3 class="text-xl font-bold mb-4">Instantly Earn AIF Tokens</h3>
-                    <p class="text-gray-300">Get first tokens within 3 minutes, earn 1-100 AIF based on answer quality, withdraw when reaching 100 AIF</p>
-                    <div class="mt-4 text-sm text-gold">
-                        <i class="fas fa-coins mr-1"></i>Average single session earning: 45AIF ($450)
+                
+                <!-- 香港AI電影市場 -->
+                <div class="ecosystem-card">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-store text-6xl text-purple-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">香港AI電影市場</h3>
                     </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        基於區塊鏈的去中心化電影投融資平台，支持項目代幣發行、版權交易、收益分享等創新金融服務。
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-400">市場交易</span>
+                        <div class="text-green-400">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 全球徵片中心 -->
+                <div class="ecosystem-card">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-globe text-6xl text-cyan-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">全球徵片中心</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        面向全球徵集AI影視作品，提供作品提交、審核、推廣、發行等全流程服務，連接創作者與全球市場。
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-400">內容聚合</span>
+                        <div class="text-green-400">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 404.world平台 -->
+                <div class="ecosystem-card">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-cube text-6xl text-pink-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">404.world平台</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        元宇宙虛擬展示空間，為AI影視作品提供沉浸式體驗環境，支持虛擬首映、互動展覽等創新展示形式。
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-400">元宇宙體驗</span>
+                        <div class="text-green-400">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- StarOS數字人經紀平台 -->
+                <div class="ecosystem-card">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-user-robot text-6xl text-orange-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">StarOS數字人經紀平台</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        專業的AI數字演員經紀服務，提供數字人創建、訓練、授權、經紀等全鏈條服務，推動數字演員產業化。
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-400">數字演員</span>
+                        <div class="text-green-400">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 香港AI影視標準委員會 -->
+                <div class="ecosystem-card">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-balance-scale text-6xl text-indigo-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">香港AI影視標準委員會</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        制定AI影視行業標準和規範，推動行業健康發展，為創作者、平台、投資者提供權威的技術和倫理指導。
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-400">標準制定</span>
+                        <div class="text-green-400">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AIF.CARDS -->
+                <div class="ecosystem-card">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-credit-card text-6xl text-emerald-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">AIF.CARDS</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        專為創作者設計的Web3信用卡系統，支持AIF代幣質押、創作者專屬權益、AI工具訂閱優惠等金融服務。
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-400">金融服務</span>
+                        <div class="text-green-400">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 404GLASS硬件平台 -->
+                <div class="ecosystem-card">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-glasses text-6xl text-red-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">404GLASS硬件平台</h3>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        專業的AR/VR硬件解決方案，為AI影視內容提供最佳的沉浸式觀看體驗，推動新型觀影模式的普及。
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-400">硬件支撑</span>
+                        <div class="text-green-400">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flow AI Learning System -->
+    <section id="learning" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Flow AI 學習系統</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    基於香港AI電影學院教學邏輯設計的10輪進階式課程，每輪完成測試後即可獲得AIF代幣獎勵
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
+                <div class="ecosystem-card p-4">
+                    <div class="text-2xl font-bold text-blue-400 mb-2">第1輪</div>
+                    <h4 class="font-semibold mb-2">AIF生態概覽</h4>
+                    <p class="text-xs text-gray-400 mb-2">平台介紹、願景使命</p>
+                    <div class="text-sm text-green-400">2分鐘</div>
+                </div>
+                
+                <div class="ecosystem-card p-4">
+                    <div class="text-2xl font-bold text-purple-400 mb-2">第2輪</div>
+                    <h4 class="font-semibold mb-2">AI技術基礎</h4>
+                    <p class="text-xs text-gray-400 mb-2">AI發展歷程、核心概念</p>
+                    <div class="text-sm text-green-400">2分鐘</div>
+                </div>
+                
+                <div class="ecosystem-card p-4">
+                    <div class="text-2xl font-bold text-cyan-400 mb-2">第3輪</div>
+                    <h4 class="font-semibold mb-2">電影產業變革</h4>
+                    <p class="text-xs text-gray-400 mb-2">AI在影視製作中的應用</p>
+                    <div class="text-sm text-green-400">2分鐘</div>
+                </div>
+                
+                <div class="ecosystem-card p-4">
+                    <div class="text-2xl font-bold text-yellow-400 mb-2">第4輪</div>
+                    <h4 class="font-semibold mb-2">區塊鏈與代幣</h4>
+                    <p class="text-xs text-gray-400 mb-2">區塊鏈基礎、DeFi概念</p>
+                    <div class="text-sm text-green-400">2分鐘</div>
+                </div>
+                
+                <div class="ecosystem-card p-4">
+                    <div class="text-2xl font-bold text-pink-400 mb-2">第5輪</div>
+                    <h4 class="font-semibold mb-2">創作者經濟</h4>
+                    <p class="text-xs text-gray-400 mb-2">內容創作、收益分享</p>
+                    <div class="text-sm text-green-400">2分鐘</div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                <div class="ecosystem-card p-4">
+                    <div class="text-2xl font-bold text-indigo-400 mb-2">第6輪</div>
+                    <h4 class="font-semibold mb-2">數字身份隱私</h4>
+                    <p class="text-xs text-gray-400 mb-2">Web3身份、數據主權</p>
+                    <div class="text-sm text-green-400">2分鐘</div>
+                </div>
+                
+                <div class="ecosystem-card p-4">
+                    <div class="text-2xl font-bold text-red-400 mb-2">第7輪</div>
+                    <h4 class="font-semibold mb-2">投資交易基礎</h4>
+                    <p class="text-xs text-gray-400 mb-2">數字資產投資策略</p>
+                    <div class="text-sm text-green-400">2分鐘</div>
+                </div>
+                
+                <div class="ecosystem-card p-4">
+                    <div class="text-2xl font-bold text-green-400 mb-2">第8輪</div>
+                    <h4 class="font-semibold mb-2">社群治理</h4>
+                    <p class="text-xs text-gray-400 mb-2">DAO概念、治理機制</p>
+                    <div class="text-sm text-green-400">2分鐘</div>
+                </div>
+                
+                <div class="ecosystem-card p-4">
+                    <div class="text-2xl font-bold text-orange-400 mb-2">第9輪</div>
+                    <h4 class="font-semibold mb-2">職業發展</h4>
+                    <p class="text-xs text-gray-400 mb-2">AI時代新興職業</p>
+                    <div class="text-sm text-green-400">2分鐘</div>
+                </div>
+                
+                <div class="ecosystem-card p-4">
+                    <div class="text-2xl font-bold text-purple-500 mb-2">第10輪</div>
+                    <h4 class="font-semibold mb-2">未來趨勢</h4>
+                    <p class="text-xs text-gray-400 mb-2">行業前瞻、機會把握</p>
+                    <div class="text-sm text-green-400">2分鐘</div>
                 </div>
             </div>
 
             <!-- Learning Features -->
             <div class="mt-20 grid md:grid-cols-3 gap-8">
-                <div class="feature-card">
+                <div class="ecosystem-card">
                     <div class="text-5xl mb-4">🎯</div>
-                    <h3 class="text-xl font-bold mb-4">Smart Difficulty Adaptation</h3>
-                    <p class="text-gray-300">AI dynamically adjusts question difficulty based on your learning ability, ensuring optimal learning experience and token rewards</p>
+                    <h3 class="text-xl font-bold mb-4">智能難度適配</h3>
+                    <p class="text-gray-300">AI根據你的學習能力動態調整題目難度，確保最佳學習體驗和代幣收益</p>
                 </div>
 
-                <div class="feature-card">
+                <div class="ecosystem-card">
                     <div class="text-5xl mb-4">⚡</div>
-                    <h3 class="text-xl font-bold mb-4">Real-time Earnings Feedback</h3>
-                    <p class="text-gray-300">Each correct answer instantly shows AIF tokens earned, making the learning process full of achievement and motivation</p>
+                    <h3 class="text-xl font-bold mb-4">實時收益反饋</h3>
+                    <p class="text-gray-300">每答對一題立即顯示獲得的AIF數量，學習過程充滿成就感和動力</p>
                 </div>
 
-                <div class="feature-card">
+                <div class="ecosystem-card">
                     <div class="text-5xl mb-4">📈</div>
-                    <h3 class="text-xl font-bold mb-4">Learning Data Analytics</h3>
-                    <p class="text-gray-300">Detailed records of learning progress, earnings statistics, knowledge mastery, helping optimize learning strategies</p>
+                    <h3 class="text-xl font-bold mb-4">學習數據統計</h3>
+                    <p class="text-gray-300">詳細記錄學習進度、收益統計、知識點掌握度，幫助優化學習策略</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Referral System Section -->
-    <section id="referral" class="py-20">
+    <!-- Rewards Section -->
+    <section id="rewards" class="py-20 bg-gradient-to-r from-blue-900/30 to-purple-900/30">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">Refer Friends, Get Rich Instantly</h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">獎勵機制</h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    Super referral reward system, the more you refer the more you earn, building passive income streams
+                    多重獎勵機制，讓學習更有動力，讓推廣更有收益
                 </p>
             </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-                <div class="stats-card glow-effect">
-                    <div class="text-4xl mb-4">👥</div>
-                    <h3 class="text-xl font-bold mb-2">Refer 1 Person</h3>
-                    <div class="text-2xl font-bold text-primary mb-2">Extra 3 Sessions</div>
-                    <p class="text-sm text-gray-400">Learning Opportunities</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="ecosystem-card p-6 text-center">
+                    <i class="fas fa-graduation-cap text-6xl text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">學習獎勵</h3>
+                    <div class="text-4xl font-bold text-green-400 mb-2">1-100 AIF</div>
+                    <p class="text-sm text-gray-300">每輪學習完成測試後根據表現獲得獎勵</p>
                 </div>
-
-                <div class="stats-card glow-effect">
-                    <div class="text-4xl mb-4">⭐</div>
-                    <h3 class="text-xl font-bold mb-2">Refer 5 People</h3>
-                    <div class="text-2xl font-bold text-secondary mb-2">VIP Channel</div>
-                    <p class="text-sm text-gray-400">20 Daily Opportunities</p>
+                
+                <div class="ecosystem-card p-6 text-center">
+                    <i class="fas fa-users text-6xl text-purple-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">推薦獎勵</h3>
+                    <div class="text-4xl font-bold text-green-400 mb-2">50 AIF</div>
+                    <p class="text-sm text-gray-300">成功邀請好友註冊學習可獲得額外獎勵</p>
                 </div>
-
-                <div class="stats-card glow-effect">
-                    <div class="text-4xl mb-4">👑</div>
-                    <h3 class="text-xl font-bold mb-2">Refer 20 People</h3>
-                    <div class="text-2xl font-bold text-gold mb-2">Super Promoter</div>
-                    <p class="text-sm text-gray-400">20% Revenue Share</p>
+                
+                <div class="ecosystem-card p-6 text-center">
+                    <i class="fas fa-fire text-6xl text-orange-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">連續學習</h3>
+                    <div class="text-4xl font-bold text-green-400 mb-2">+20%</div>
+                    <p class="text-sm text-gray-300">連續多天學習可獲得額外獎勵加成</p>
                 </div>
-
-                <div class="stats-card glow-effect">
-                    <div class="text-4xl mb-4">💎</div>
-                    <h3 class="text-xl font-bold mb-2">Team Bonus</h3>
-                    <div class="text-2xl font-bold text-accent mb-2">10% Commission</div>
-                    <p class="text-sm text-gray-400">From Downline Users</p>
+                
+                <div class="ecosystem-card p-6 text-center">
+                    <i class="fas fa-crown text-6xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">完課獎勵</h3>
+                    <div class="text-4xl font-bold text-green-400 mb-2">500 AIF</div>
+                    <p class="text-sm text-gray-300">完成全部10輪學習可獲得額外完課大獎</p>
                 </div>
             </div>
 
             <!-- Success Stories -->
             <div class="bg-gradient-to-r from-purple-900/20 to-blue-900/20 rounded-3xl p-8 mb-16">
-                <h3 class="text-2xl font-bold text-center mb-8 text-gold">🏆 Promoter Success Stories</h3>
+                <h3 class="text-2xl font-bold text-center mb-8 text-gold">🏆 推廣達人成功案例</h3>
                 <div class="grid md:grid-cols-3 gap-6">
                     <div class="text-center">
                         <div class="text-4xl mb-2">🥇</div>
-                        <div class="font-bold text-xl">Mr. Johnson</div>
-                        <div class="text-green-400 font-bold">Monthly Income $15,847</div>
-                        <div class="text-sm text-gray-400">Referred 127 people</div>
+                        <div class="font-bold text-xl">李先生</div>
+                        <div class="text-green-400 font-bold">月收益 1,584AIF</div>
+                        <div class="text-sm text-gray-400">推薦了127人</div>
                     </div>
                     <div class="text-center">
                         <div class="text-4xl mb-2">🥈</div>
-                        <div class="font-bold text-xl">Ms. Smith</div>
-                        <div class="text-green-400 font-bold">Monthly Income $12,356</div>
-                        <div class="text-sm text-gray-400">Referred 98 people</div>
+                        <div class="font-bold text-xl">張女士</div>
+                        <div class="text-green-400 font-bold">月收益 1,235AIF</div>
+                        <div class="text-sm text-gray-400">推薦了98人</div>
                     </div>
                     <div class="text-center">
                         <div class="text-4xl mb-2">🥉</div>
-                        <div class="font-bold text-xl">Mr. Williams</div>
-                        <div class="text-green-400 font-bold">Monthly Income $8,924</div>
-                        <div class="text-sm text-gray-400">Referred 73 people</div>
+                        <div class="font-bold text-xl">王先生</div>
+                        <div class="text-green-400 font-bold">月收益 892AIF</div>
+                        <div class="text-sm text-gray-400">推薦了73人</div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Viral Tools -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="feature-card">
-                    <div class="text-4xl mb-4">📊</div>
-                    <h3 class="text-xl font-bold mb-4">One-Click Generate Posters</h3>
-                    <p class="text-gray-300">AI auto-generates personalized promotional posters, including your invitation code and earnings display</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="text-4xl mb-4">💬</div>
-                    <h3 class="text-xl font-bold mb-4">Viral Content Library</h3>
-                    <p class="text-gray-300">Provides 100+ explosive sharing templates, one-click copy to social media and messaging groups</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="text-4xl mb-4">🏆</div>
-                    <h3 class="text-xl font-bold mb-4">Leaderboard Competition</h3>
-                    <p class="text-gray-300">Daily/Weekly/Monthly referral leaderboards, top 10 get extra AIF rewards and honor badges</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="text-4xl mb-4">🎖️</div>
-                    <h3 class="text-xl font-bold mb-4">Achievement Badge System</h3>
-                    <p class="text-gray-300">Different tier referral achievements unlock special privileges, enhancing social influence</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Price Progress Section -->
+    <!-- AIF Token Price Growth Path -->
     <section id="pricing" class="py-20 bg-black bg-opacity-30">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">AIF Token Price Growth Roadmap</h2>
+                <h2 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">AIF代幣價格增長路線</h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    As user count increases, AIF token value continues to rise. Early participants get maximum returns!
+                    隨著用戶數量增加，AIF代幣價值持續上升。早期參與者獲得最大收益！
                 </p>
             </div>
 
@@ -646,29 +1014,29 @@
                 <!-- Current Status -->
                 <div class="text-center mb-12">
                     <div class="bg-gradient-to-r from-green-600/20 to-blue-600/20 rounded-3xl p-8 mb-8">
-                        <h3 class="text-2xl font-bold mb-4">🔍 Current Stage</h3>
+                        <h3 class="text-2xl font-bold mb-4">🔍 當前階段</h3>
                         <div class="flex justify-center items-center space-x-4 flex-wrap">
                             <div class="text-center">
-                                <div class="text-sm text-gray-400">Current Users</div>
-                                <div class="text-3xl font-bold text-primary" id="current-users">501</div>
+                                <div class="text-sm text-gray-400">當前用戶數</div>
+                                <div class="text-3xl font-bold text-primary" id="current-users">15,847</div>
                             </div>
                             <div class="text-4xl">→</div>
                             <div class="text-center">
-                                <div class="text-sm text-gray-400">Current Price</div>
+                                <div class="text-sm text-gray-400">當前價格</div>
                                 <div class="text-4xl font-bold text-gold">$10.00</div>
                             </div>
                             <div class="text-4xl">→</div>
                             <div class="text-center">
-                                <div class="text-sm text-gray-400">Next Stage</div>
+                                <div class="text-sm text-gray-400">下一階段</div>
                                 <div class="text-2xl font-bold text-red-400">$105.00</div>
-                                <div class="text-xs text-gray-500">At 100K users</div>
+                                <div class="text-xs text-gray-500">100萬用戶時</div>
                             </div>
                         </div>
                         <div class="mt-4">
                             <div class="bg-gray-700 rounded-full h-4 overflow-hidden">
-                                <div class="bg-gradient-to-r from-green-400 to-blue-400 h-full rounded-full" style="width: 15.7%"></div>
+                                <div class="bg-gradient-to-r from-green-400 to-blue-400 h-full rounded-full" style="width: 1.58%"></div>
                             </div>
-                            <div class="text-sm text-gray-400 mt-2">843,153 more users needed for next price surge</div>
+                            <div class="text-sm text-gray-400 mt-2">距離下一價格上漲還需 984,153 用戶</div>
                         </div>
                     </div>
                 </div>
@@ -677,71 +1045,71 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
                     <div class="bg-green-900/20 border-2 border-green-400 rounded-2xl p-6 relative">
                         <div class="absolute top-4 right-4 text-green-400 text-xl">✅</div>
-                        <h4 class="text-xl font-bold text-green-400 mb-2">Launch Stage</h4>
+                        <h4 class="text-xl font-bold text-green-400 mb-2">起步階段</h4>
                         <div class="text-3xl font-bold mb-2">$0.10</div>
-                        <div class="text-sm text-gray-400">0 - 5,000 users</div>
-                        <div class="text-xs text-green-400 mt-2">Completed</div>
+                        <div class="text-sm text-gray-400">0 - 5,000 用戶</div>
+                        <div class="text-xs text-green-400 mt-2">已完成</div>
                     </div>
 
                     <div class="bg-blue-900/20 border-2 border-blue-400 rounded-2xl p-6 relative">
                         <div class="absolute top-4 right-4 text-blue-400 text-xl">✅</div>
-                        <h4 class="text-xl font-bold text-blue-400 mb-2">Growth Stage</h4>
+                        <h4 class="text-xl font-bold text-blue-400 mb-2">成長階段</h4>
                         <div class="text-3xl font-bold mb-2">$0.20 - $1.00</div>
-                        <div class="text-sm text-gray-400">5,000 - 50,000 users</div>
-                        <div class="text-xs text-blue-400 mt-2">Completed</div>
+                        <div class="text-sm text-gray-400">5,000 - 50,000 用戶</div>
+                        <div class="text-xs text-blue-400 mt-2">已完成</div>
                     </div>
 
                     <div class="bg-purple-900/20 border-2 border-purple-400 rounded-2xl p-6 relative glow-effect">
                         <div class="absolute top-4 right-4 text-purple-400 text-xl">🔥</div>
-                        <h4 class="text-xl font-bold text-purple-400 mb-2">Acceleration Stage</h4>
+                        <h4 class="text-xl font-bold text-purple-400 mb-2">加速階段</h4>
                         <div class="text-3xl font-bold mb-2">$10.00</div>
-                        <div class="text-sm text-gray-400">100,000 users</div>
-                        <div class="text-xs text-purple-400 mt-2">Current Stage</div>
+                        <div class="text-sm text-gray-400">100,000 用戶</div>
+                        <div class="text-xs text-purple-400 mt-2">當前階段</div>
                     </div>
 
                     <div class="bg-red-900/20 border-2 border-red-400 rounded-2xl p-6">
-                        <h4 class="text-xl font-bold text-red-400 mb-2">Explosion Stage</h4>
+                        <h4 class="text-xl font-bold text-red-400 mb-2">爆發階段</h4>
                         <div class="text-3xl font-bold mb-2">$105</div>
-                        <div class="text-sm text-gray-400">1,000,000 users</div>
-                        <div class="text-xs text-yellow-400 mt-2">Expected within 18 months</div>
+                        <div class="text-sm text-gray-400">1,000,000 用戶</div>
+                        <div class="text-xs text-yellow-400 mt-2">預期18個月內達成</div>
                     </div>
 
                     <div class="bg-gold/20 border-2 border-gold rounded-2xl p-6">
-                        <h4 class="text-xl font-bold text-gold mb-2">Peak Stage</h4>
+                        <h4 class="text-xl font-bold text-gold mb-2">巔峰階段</h4>
                         <div class="text-3xl font-bold mb-2">$600</div>
-                        <div class="text-sm text-gray-400">5,000,000 users</div>
-                        <div class="text-xs text-gold mt-2">Expected within 30 months</div>
+                        <div class="text-sm text-gray-400">5,000,000 用戶</div>
+                        <div class="text-xs text-gold mt-2">預期30個月內達成</div>
                     </div>
 
                     <div class="bg-gradient-to-br from-purple-600/20 to-pink-600/20 border-2 border-pink-400 rounded-2xl p-6">
-                        <h4 class="text-xl font-bold text-pink-400 mb-2">Legendary Stage</h4>
+                        <h4 class="text-xl font-bold text-pink-400 mb-2">傳奇階段</h4>
                         <div class="text-3xl font-bold mb-2">$???</div>
-                        <div class="text-sm text-gray-400">10,000,000+ users</div>
-                        <div class="text-xs text-pink-400 mt-2">Sky's the limit</div>
+                        <div class="text-sm text-gray-400">10,000,000+ 用戶</div>
+                        <div class="text-xs text-pink-400 mt-2">天空才是極限</div>
                     </div>
                 </div>
 
                 <!-- Investment Calculator -->
                 <div class="bg-gradient-to-r from-gold/10 to-orange-500/10 rounded-3xl p-8">
-                    <h3 class="text-2xl font-bold text-center mb-8 text-gold">💰 Earnings Calculator</h3>
+                    <h3 class="text-2xl font-bold text-center mb-8 text-gold">💰 收益計算器</h3>
                     <div class="grid md:grid-cols-3 gap-8 text-center">
                         <div>
-                            <h4 class="text-lg font-bold mb-4">Conservative Estimate</h4>
-                            <div class="text-sm text-gray-400 mb-2">5 daily sessions, average 30 AIF</div>
-                            <div class="text-2xl font-bold text-green-400">Monthly Income: $9,450</div>
-                            <div class="text-sm text-gray-400">Based on current price $10.00</div>
+                            <h4 class="text-lg font-bold mb-4">保守估算</h4>
+                            <div class="text-sm text-gray-400 mb-2">每日學習5輪，平均獲得30AIF</div>
+                            <div class="text-2xl font-bold text-green-400">月收入：900AIF</div>
+                            <div class="text-sm text-gray-400">基於當前價格 $10.00</div>
                         </div>
                         <div>
-                            <h4 class="text-lg font-bold mb-4">Active Participation</h4>
-                            <div class="text-sm text-gray-400 mb-2">10 daily sessions + refer 5 people</div>
-                            <div class="text-2xl font-bold text-blue-400">Monthly Income: $23,100</div>
-                            <div class="text-sm text-gray-400">Including referral bonuses</div>
+                            <h4 class="text-lg font-bold mb-4">積極參與</h4>
+                            <div class="text-sm text-gray-400 mb-2">每日學習10輪 + 推薦5人</div>
+                            <div class="text-2xl font-bold text-blue-400">月收入：2,310AIF</div>
+                            <div class="text-sm text-gray-400">包含推薦獎勵</div>
                         </div>
                         <div>
-                            <h4 class="text-lg font-bold mb-4">Super Promoter</h4>
-                            <div class="text-sm text-gray-400 mb-2">Refer 50 people + team bonuses</div>
-                            <div class="text-2xl font-bold text-gold">Monthly Income: $68,250</div>
-                            <div class="text-sm text-gray-400">Passive income streams</div>
+                            <h4 class="text-lg font-bold mb-4">超級推廣員</h4>
+                            <div class="text-sm text-gray-400 mb-2">推薦50人 + 團隊獎勵</div>
+                            <div class="text-2xl font-bold text-gold">月收入：6,825AIF</div>
+                            <div class="text-sm text-gray-400">被動收入管道</div>
                         </div>
                     </div>
                 </div>
@@ -749,64 +1117,108 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- User Testimonials -->
     <section class="py-20">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">Real User Earnings Testimonials</h2>
-                <p class="text-xl text-gray-300">Real testimonials from actual users, see how they changed their lives through learning</p>
+                <h2 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">用戶真實收益分享</h2>
+                <p class="text-xl text-gray-300">來自真實用戶的收益見證，他們是如何通過學習改變生活的</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-gradient-to-br from-green-900/30 to-blue-900/30 rounded-3xl p-8 border border-green-400/30">
                     <div class="flex items-center mb-4">
                         <div class="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center mr-4">
-                            <span class="text-black font-bold">J</span>
+                            <span class="text-black font-bold">李</span>
                         </div>
                         <div>
-                            <div class="font-bold">John Smith</div>
-                            <div class="text-sm text-gray-400">College Student • Using 3 months</div>
+                            <div class="font-bold">李明豪</div>
+                            <div class="text-sm text-gray-400">大學生 • 使用3個月</div>
                         </div>
                     </div>
                     <div class="text-yellow-400 mb-4">⭐⭐⭐⭐⭐</div>
                     <blockquote class="text-gray-300 mb-4">
-                        "Initially didn't believe it, registered just to try. Didn't expect to earn 250 AIF on the first day! Now daily learning has become a habit, monthly income exceeds 3 times my part-time job earnings!"
+                        "剛開始不相信，抱著試試的心態註冊了。沒想到第一天就賺了250AIF！現在每天學習已經成為習慣，月收入超過我打工收入的3倍！"
                     </blockquote>
-                    <div class="text-green-400 font-bold">Monthly Earnings: $12,847</div>
+                    <div class="text-green-400 font-bold">月收益：1,284AIF</div>
                 </div>
 
                 <div class="bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-3xl p-8 border border-purple-400/30">
                     <div class="flex items-center mb-4">
                         <div class="w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center mr-4">
-                            <span class="text-black font-bold">E</span>
+                            <span class="text-black font-bold">張</span>
                         </div>
                         <div>
-                            <div class="font-bold">Emily Johnson</div>
-                            <div class="text-sm text-gray-400">Stay-at-home Mom • Using 6 months</div>
+                            <div class="font-bold">張美玲</div>
+                            <div class="text-sm text-gray-400">全職媽媽 • 使用6個月</div>
                         </div>
                     </div>
                     <div class="text-yellow-400 mb-4">⭐⭐⭐⭐⭐</div>
                     <blockquote class="text-gray-300 mb-4">
-                        "Learning during spare time while taking care of kids. Flow AI is very interesting, my children also enjoy watching me chat with AI. Referred many mom friends, now have stable passive income!"
+                        "在家帶孩子的空檔時間學習，AI很有趣，孩子也喜歡看我和AI對話。推薦了很多媽媽群的朋友，現在有了穩定的被動收入！"
                     </blockquote>
-                    <div class="text-green-400 font-bold">Monthly Earnings: $8,934</div>
+                    <div class="text-green-400 font-bold">月收益：893AIF</div>
                 </div>
 
                 <div class="bg-gradient-to-br from-blue-900/30 to-teal-900/30 rounded-3xl p-8 border border-blue-400/30">
                     <div class="flex items-center mb-4">
                         <div class="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center mr-4">
-                            <span class="text-black font-bold">M</span>
+                            <span class="text-black font-bold">王</span>
                         </div>
                         <div>
-                            <div class="font-bold">Michael Brown</div>
-                            <div class="text-sm text-gray-400">Software Engineer • Using 8 months</div>
+                            <div class="font-bold">王志強</div>
+                            <div class="text-sm text-gray-400">程序員 • 使用8個月</div>
                         </div>
                     </div>
                     <div class="text-yellow-400 mb-4">⭐⭐⭐⭐⭐</div>
                     <blockquote class="text-gray-300 mb-4">
-                        "As a tech person, I'm very interested in AI. Flow AI's teaching quality exceeded expectations. Not only learned knowledge but also earned money. Now AIF token value has surged, I'm glad I participated early!"
+                        "作為技術人員，我對AI很有興趣。AI的教學質量超出預期，不僅學到了知識，還賺到了錢。現在AIF代幣價值暴漲，我很慶幸早期就參與了！"
                     </blockquote>
-                    <div class="text-green-400 font-bold">Monthly Earnings: $15,726</div>
+                    <div class="text-green-400 font-bold">月收益：1,572AIF</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commercial Partnership -->
+    <section class="py-20 bg-black bg-opacity-30">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">品牌商務合作</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    與全球頂級品牌攜手，創造互動式廣告新體驗，用戶觀看廣告即可獲得AIF代幣獎勵
+                </p>
+            </div>
+
+            <!-- Coming Soon Ad Zone -->
+            <div class="ad-zone mb-16">
+                <div class="ad-content">
+                    <div class="text-6xl mb-6">🚀</div>
+                    <h3 class="text-3xl font-bold text-gold mb-4">互動廣告平台即將上線</h3>
+                    <p class="text-xl text-gray-300 mb-6">
+                        革命性廣告體驗：觀看品牌廣告 → AI互動問答 → 獲得AIF代幣獎勵
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-black bg-opacity-50 rounded-2xl p-6">
+                            <div class="text-3xl mb-2">📺</div>
+                            <h4 class="text-lg font-bold mb-2">品牌廣告展示</h4>
+                            <p class="text-gray-400">精美品牌內容，非侵入式展示</p>
+                        </div>
+                        <div class="bg-black bg-opacity-50 rounded-2xl p-6">
+                            <div class="text-3xl mb-2">🤖</div>
+                            <h4 class="text-lg font-bold mb-2">AI互動問答</h4>
+                            <p class="text-gray-400">智能對話了解品牌，深度互動體驗</p>
+                        </div>
+                        <div class="bg-black bg-opacity-50 rounded-2xl p-6">
+                            <div class="text-3xl mb-2">💰</div>
+                            <h4 class="text-lg font-bold mb-2">代幣即時獎勵</h4>
+                            <p class="text-gray-400">完成互動立即獲得AIF代幣收益</p>
+                        </div>
+                    </div>
+                    <div class="text-2xl font-bold text-accent mb-4">
+                        ⏰ 預計上線時間：2025年11月
+                    </div>
+                    <p class="text-gray-400">已有50+全球知名品牌確認合作意向</p>
                 </div>
             </div>
         </div>
@@ -817,61 +1229,105 @@
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-4xl md:text-6xl font-bold mb-8">
-                    <span class="text-red-400">⚠️ Miss Today</span><br>
-                    <span class="text-yellow-300">May Never Get This Price Again!</span>
+                    <span class="text-red-400">⚠️ 錯過今天</span><br>
+                    <span class="text-yellow-300">可能再也沒有這個價格！</span>
                 </h2>
                 
                 <div class="grid md:grid-cols-3 gap-8 mb-12">
                     <div class="bg-red-900/30 rounded-2xl p-6 border-2 border-red-400">
                         <div class="text-4xl mb-4">😱</div>
-                        <h3 class="text-xl font-bold text-red-400 mb-2">Regret is Inevitable</h3>
-                        <p class="text-gray-300">"I hesitated when it was $0.20, now it's $10 and I'm still watching..."</p>
-                        <div class="text-sm text-gray-500 mt-2">- Anonymous User</div>
+                        <h3 class="text-xl font-bold text-red-400 mb-2">後悔莫及</h3>
+                        <p class="text-gray-300">"我在$0.20時猶豫了，現在$10了還在觀望..."</p>
+                        <div class="text-sm text-gray-500 mt-2">- 匿名用戶</div>
                     </div>
                     
                     <div class="bg-orange-900/30 rounded-2xl p-6 border-2 border-orange-400">
                         <div class="text-4xl mb-4">📈</div>
-                        <h3 class="text-xl font-bold text-orange-400 mb-2">Price Explosion</h3>
-                        <p class="text-gray-300">From $0.10 to $10.00 in 3 months, 10,000% increase!</p>
-                        <div class="text-green-400 font-bold mt-2">Early users average profit: $50,000+</div>
+                        <h3 class="text-xl font-bold text-orange-400 mb-2">價格暴漲</h3>
+                        <p class="text-gray-300">3個月內從$0.10漲到$10.00，漲幅10,000%！</p>
+                        <div class="text-green-400 font-bold mt-2">早期用戶平均收益：5,000AIF+</div>
                     </div>
                     
                     <div class="bg-yellow-900/30 rounded-2xl p-6 border-2 border-yellow-400">
                         <div class="text-4xl mb-4">⏰</div>
-                        <h3 class="text-xl font-bold text-yellow-400 mb-2">Time is Critical</h3>
-                        <p class="text-gray-300">Every 10,000 new users triggers automatic price increase. Don't miss out!</p>
-                        <div class="text-red-400 font-bold mt-2">Today's remaining spots: 9,813</div>
+                        <h3 class="text-xl font-bold text-yellow-400 mb-2">時間緊迫</h3>
+                        <p class="text-gray-300">每增加10,000用戶，價格自動上調。機不可失！</p>
+                        <div class="text-red-400 font-bold mt-2">今日剩餘名額：9,813個</div>
                     </div>
                 </div>
 
                 <!-- Final CTA -->
                 <div class="space-y-6">
                     <div class="text-center">
-                        <div class="text-2xl font-bold text-gold mb-4">🎁 New User Limited-Time Benefits</div>
+                        <div class="text-2xl font-bold text-gold mb-4">🎁 新用戶限時福利</div>
                         <div class="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-6">
                             <div class="bg-green-900/20 p-4 rounded-lg">
-                                <div class="font-bold text-green-400">✓ Register & Get 50 AIF</div>
-                                <div class="text-sm text-gray-400">Worth $500</div>
+                                <div class="font-bold text-green-400">✓ 註冊即送50AIF</div>
+                                <div class="text-sm text-gray-400">價值$500</div>
                             </div>
                             <div class="bg-blue-900/20 p-4 rounded-lg">
-                                <div class="font-bold text-blue-400">✓ First Learning Double Rewards</div>
-                                <div class="text-sm text-gray-400">Up to 200 AIF</div>
+                                <div class="font-bold text-blue-400">✓ 首次學習雙倍獎勵</div>
+                                <div class="text-sm text-gray-400">最高可獲200AIF</div>
                             </div>
                         </div>
                     </div>
                     
                     <button class="cta-button danger-button text-xl px-12 py-6">
                         <i class="fas fa-rocket mr-3"></i>
-                        Register Now - Start Earning in 60s
+                        立即搶註 - 60秒開始賺錢
                     </button>
                     
                     <div class="text-center text-gray-400">
                         <div class="flex justify-center items-center space-x-4 text-sm">
-                            <span><i class="fas fa-shield-check text-green-400 mr-1"></i>100% Security Guarantee</span>
-                            <span><i class="fas fa-mobile-alt text-blue-400 mr-1"></i>Phone Verification Registration</span>
-                            <span><i class="fas fa-dollar-sign text-gold mr-1"></i>Withdraw at 100 AIF</span>
+                            <span><i class="fas fa-shield-check text-green-400 mr-1"></i>100%安全保障</span>
+                            <span><i class="fas fa-mobile-alt text-blue-400 mr-1"></i>手機驗證註冊</span>
+                            <span><i class="fas fa-coins text-gold mr-1"></i>滿100AIF可提現</span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">加入社群</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    與全球AI影視愛好者交流學習，分享心得，共同成長
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="ecosystem-card p-8 text-center">
+                    <i class="fab fa-telegram text-6xl text-blue-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Telegram社群</h3>
+                    <p class="text-gray-300 mb-6">即時交流學習心得、獲取最新資訊</p>
+                    <button class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-full text-white font-bold transition">
+                        <i class="fas fa-external-link-alt mr-2"></i>
+                        加入群組
+                    </button>
+                </div>
+                
+                <div class="ecosystem-card p-8 text-center">
+                    <i class="fab fa-discord text-6xl text-purple-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Discord伺服器</h3>
+                    <p class="text-gray-300 mb-6">深度討論AI影視技術與創作</p>
+                    <button class="bg-purple-500 hover:bg-purple-600 px-6 py-3 rounded-full text-white font-bold transition">
+                        <i class="fas fa-external-link-alt mr-2"></i>
+                        加入伺服器
+                    </button>
+                </div>
+                
+                <div class="ecosystem-card p-8 text-center">
+                    <i class="fab fa-twitter text-6xl text-cyan-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Twitter官方</h3>
+                    <p class="text-gray-300 mb-6">關注最新動態、參與互動活動</p>
+                    <button class="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-full text-white font-bold transition">
+                        <i class="fas fa-external-link-alt mr-2"></i>
+                        關注我們
+                    </button>
                 </div>
             </div>
         </div>
@@ -882,17 +1338,12 @@
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="floating-unicorn">
-                            <div style="width: 40px; height: 40px; background: linear-gradient(45deg, #00ff9d, #3498db, #ff6b35); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🦄</div>
-                        </div>
-                        <div>
-                            <div class="font-bold text-lg gradient-text">AIF Learn to Earn</div>
-                            <div class="text-xs text-gray-400">Powered by Flow AI</div>
-                        </div>
+                    <div class="flex flex-col items-start mb-6">
+                        <div class="logo-font text-2xl">AIF.AD</div>
+                        <div class="logo-sub text-xs">香港AI國際電影節官方空投平台</div>
                     </div>
                     <p class="text-gray-400 mb-4">
-                        World's first AI learning mining platform. Earn AIF tokens through intelligent conversation learning, opening a new era of learning while earning.
+                        全球首創AI學習挖礦平台，連接香港AI國際電影節完整生態系統，通過智能對話學習獲得AIF代幣，開啟學習即賺錢的全新時代。
                     </p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-primary transition">
@@ -911,29 +1362,29 @@
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-bold mb-4">Learn & Earn</h4>
+                    <h4 class="text-lg font-bold mb-4">學習賺錢</h4>
                     <ul class="space-y-2">
-                        <li><a href="#learning" class="text-gray-400 hover:text-primary transition">AI Smart Learning</a></li>
-                        <li><a href="#rewards" class="text-gray-400 hover:text-primary transition">Token Rewards</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Learning Statistics</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Withdrawal Guide</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition">FAQ</a></li>
+                        <li><a href="#learning" class="text-gray-400 hover:text-primary transition">AI智能學習</a></li>
+                        <li><a href="#rewards" class="text-gray-400 hover:text-primary transition">代幣獎勵</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">學習統計</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">提現指南</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">常見問題</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-bold mb-4">Referral Earnings</h4>
+                    <h4 class="text-lg font-bold mb-4">推薦賺錢</h4>
                     <ul class="space-y-2">
-                        <li><a href="#referral" class="text-gray-400 hover:text-primary transition">Referral Rewards</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Promotion Tools</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Leaderboard</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Achievement System</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Promotion Guide</a></li>
+                        <li><a href="#rewards" class="text-gray-400 hover:text-primary transition">推薦獎勵</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">推廣工具</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">排行榜</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">成就系統</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">推廣指南</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <h4 class="text-lg font-bold mb-4">聯繫我們</h4>
                     <ul class="space-y-3 text-gray-400">
                         <li class="flex items-start">
                             <i class="fas fa-envelope mt-1 mr-3 text-primary"></i>
@@ -945,23 +1396,23 @@
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-clock mt-1 mr-3 text-primary"></i>
-                            <span>24/7 Online Support</span>
+                            <span>24/7 在線客服</span>
                         </li>
                     </ul>
                     
                     <!-- Real-time Stats -->
                     <div class="mt-6 bg-gray-800/50 rounded-lg p-3">
-                        <div class="text-xs text-gray-400 mb-1">Real-time Data</div>
+                        <div class="text-xs text-gray-400 mb-1">實時數據</div>
                         <div class="flex justify-between text-sm">
-                            <span>Online Users</span>
+                            <span>在線用戶</span>
                             <span class="text-green-400" id="online-users">127</span>
                         </div>
                         <div class="flex justify-between text-sm">
-                            <span>Today's Sessions</span>
+                            <span>今日學習次數</span>
                             <span class="text-blue-400" id="today-sessions">1,847</span>
                         </div>
                         <div class="flex justify-between text-sm">
-                            <span>Today's AIF Distributed</span>
+                            <span>今日分發AIF</span>
                             <span class="text-gold" id="today-distributed">47,298</span>
                         </div>
                     </div>
@@ -969,8 +1420,8 @@
             </div>
             
             <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
-                <p>&copy; 2025 AIF Learn to Earn Platform. All rights reserved.</p>
-                <p class="text-xs mt-2">This platform is powered by Flow AI technology, providing users with personalized learning experiences and token rewards.</p>
+                <p>&copy; 2025 AIF.AD - 香港AI國際電影節官方空投平台. 保留所有權利。</p>
+                <p class="text-xs mt-2">本平台連接香港AI國際電影節完整生態系統，為用戶提供個性化學習體驗和代幣獎勵。</p>
             </div>
         </div>
     </footer>
@@ -1006,82 +1457,68 @@
             document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
         }
 
-        // Update price based on user count
+        // Update price and users
         function updatePriceAndUsers() {
-            const userCounts = [5000, 10000, 50000, 100000, 1000000, 5000000];
-            const prices = [0.2, 0.6, 1.0, 10.0, 105.0, 600.0];
-            
-            let currentUsers = 501; // Starting user count
+            let currentUsers = 15847;
             let currentPrice = 10.00;
             
-            // Simulate gradual user increase
-            currentUsers += Math.floor(Math.random() * 100);
+            currentUsers += Math.floor(Math.random() * 50);
             
-            // Update displays
             document.getElementById('current-users').textContent = currentUsers.toLocaleString();
             document.getElementById('current-price').textContent = `${currentPrice.toFixed(2)}`;
             
-            // Update remaining spots (decreasing)
-            const currentSpots = parseInt(document.getElementById('remaining-spots').textContent);
+            const currentSpots = parseInt(document.getElementById('remaining-spots').textContent.replace(',', ''));
             if (currentSpots > 0) {
-                document.getElementById('remaining-spots').textContent = Math.max(0, currentSpots - Math.floor(Math.random() * 10));
+                document.getElementById('remaining-spots').textContent = Math.max(0, currentSpots - Math.floor(Math.random() * 10)).toLocaleString();
             }
             
-            // Update taken spots (increasing)
             const takenSpots = parseInt(document.getElementById('taken-spots').textContent.replace(',', ''));
             document.getElementById('taken-spots').textContent = (takenSpots + Math.floor(Math.random() * 20)).toLocaleString();
         }
 
-        // Animate numbers
-        function animateNumber(element, start, end, duration) {
-            const range = end - start;
-            const startTime = Date.now();
-            
-            const timer = setInterval(() => {
-                const elapsed = Date.now() - startTime;
-                const progress = elapsed / duration;
-                
-                if (progress >= 1) {
-                    element.textContent = end.toLocaleString();
-                    clearInterval(timer);
-                } else {
-                    const current = Math.floor(start + (range * progress));
-                    element.textContent = current.toLocaleString();
-                }
-            }, 50);
-        }
-
         // Update real-time stats
         function updateRealTimeStats() {
-            // Online users fluctuation
             const onlineUsersElement = document.getElementById('online-users');
             const currentOnline = parseInt(onlineUsersElement.textContent.replace(',', ''));
-            const newOnline = currentOnline + Math.floor(Math.random() * 200) - 100;
-            onlineUsersElement.textContent = Math.max(50, newOnline).toLocaleString();
+            const newOnline = currentOnline + Math.floor(Math.random() * 50) - 25;
+            onlineUsersElement.textContent = Math.max(100, newOnline).toLocaleString();
 
-            // Today sessions
             const sessionsElement = document.getElementById('today-sessions');
             const currentSessions = parseInt(sessionsElement.textContent.replace(',', ''));
             const newSessions = currentSessions + Math.floor(Math.random() * 50);
             sessionsElement.textContent = newSessions.toLocaleString();
 
-            // Today distributed AIF
             const distributedElement = document.getElementById('today-distributed');
             const currentDistributed = parseInt(distributedElement.textContent.replace(',', ''));
-            const newDistributed = currentDistributed + Math.floor(Math.random() * 1000);
+            const newDistributed = currentDistributed + Math.floor(Math.random() * 500);
             distributedElement.textContent = newDistributed.toLocaleString();
 
-            // Total distributed value
             const totalElement = document.getElementById('total-distributed');
-            const currentTotal = parseFloat(totalElement.textContent.replace(', '').replace('K', ''));
-            const newTotal = (currentTotal + 0.1).toFixed(0);
-            totalElement.textContent = `${newTotal}K`;
+            const currentTotal = parseFloat(totalElement.textContent.replace('M', ''));
+            const newTotal = (currentTotal + 0.001).toFixed(1);
+            totalElement.textContent = `${newTotal}M`;
 
-            // Active users
             const activeElement = document.getElementById('active-users');
             const currentActive = parseInt(activeElement.textContent.replace(',', ''));
-            const newActive = currentActive + Math.floor(Math.random() * 10);
+            const newActive = currentActive + Math.floor(Math.random() * 5);
             activeElement.textContent = newActive.toLocaleString();
+        }
+
+        // Random data streams
+        function createDataStreams() {
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    const stream = document.createElement('div');
+                    stream.className = 'data-stream';
+                    stream.style.left = Math.random() * 100 + '%';
+                    stream.style.animationDelay = Math.random() * 2 + 's';
+                    document.body.appendChild(stream);
+                    
+                    setTimeout(() => {
+                        stream.remove();
+                    }, 4000);
+                }, i * 3000);
+            }
         }
 
         // Smooth scrolling for navigation links
@@ -1094,46 +1531,30 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
-                    // Close mobile menu if open
                     mobileMenu.classList.remove('open');
                 }
             });
         });
-
-        // Add floating animation to elements
-        function createFloatingEffect() {
-            const floatingElements = document.querySelectorAll('.floating-unicorn');
-            floatingElements.forEach(element => {
-                setInterval(() => {
-                    const randomY = Math.random() * 10 - 5;
-                    const randomRotate = Math.random() * 10 - 5;
-                    element.style.transform = `translateY(${randomY}px) rotate(${randomRotate}deg)`;
-                }, 3000 + Math.random() * 2000);
-            });
-        }
 
         // Initialize all functions
         function init() {
             updateCountdown();
             updatePriceAndUsers();
             updateRealTimeStats();
-            createFloatingEffect();
+            createDataStreams();
 
-            // Set intervals
             setInterval(updateCountdown, 1000);
-            setInterval(updatePriceAndUsers, 30000); // Every 30 seconds
-            setInterval(updateRealTimeStats, 5000); // Every 5 seconds
+            setInterval(updatePriceAndUsers, 30000);
+            setInterval(updateRealTimeStats, 5000);
+            setInterval(createDataStreams, 15000);
 
-            // Add click handlers to CTA buttons
             document.querySelectorAll('.cta-button, .danger-button').forEach(button => {
                 button.addEventListener('click', () => {
-                    // Simulate registration flow
-                    alert('Redirecting to registration page...\n\n🎉 Congratulations! Upon successful registration you will receive:\n✓ Newcomer gift package: 50 AIF tokens\n✓ First learning double rewards\n✓ Exclusive referral code\n\nStart your learning and earning journey immediately!');
+                    alert('正在跳轉到註冊頁面...\n\n🎉 恭喜！註冊成功即可獲得:\n✓ 新手大禮包：50AIF代幣\n✓ 首次學習雙倍獎勵\n✓ 專屬推薦碼\n\n立即開始您的學習賺錢之旅！');
                 });
             });
 
-            // Add hover effects to stats cards
-            document.querySelectorAll('.stats-card').forEach(card => {
+            document.querySelectorAll('.stats-card, .ecosystem-card').forEach(card => {
                 card.addEventListener('mouseenter', () => {
                     card.style.transform = 'translateY(-10px) scale(1.02)';
                 });
@@ -1142,14 +1563,7 @@
                 });
             });
 
-            // Add glow effect animation
-            document.querySelectorAll('.glow-effect').forEach(element => {
-                setInterval(() => {
-                    element.style.boxShadow = `0 0 ${20 + Math.random() * 20}px rgba(0, 255, 157, ${0.3 + Math.random() * 0.3})`;
-                }, 2000);
-            });
-
-            // Add scroll reveal animation
+            // Scroll reveal animation
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
@@ -1164,7 +1578,8 @@
                 });
             }, observerOptions);
 
-            document.querySelectorAll('.feature-card, .stats-card, .step-card').forEach(el => {
+            // Observe elements for animation
+            document.querySelectorAll('.ecosystem-card, .stats-card, .step-card').forEach(el => {
                 el.style.opacity = '0';
                 el.style.transform = 'translateY(30px)';
                 el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -1172,157 +1587,8 @@
             });
         }
 
-        // Start when page loads
         document.addEventListener('DOMContentLoaded', init);
-
-        // Add some easter eggs for engagement
-        let clickCount = 0;
-        document.addEventListener('click', () => {
-            clickCount++;
-            if (clickCount === 10) {
-                const surprise = document.createElement('div');
-                surprise.innerHTML = '🎉 You discovered a hidden easter egg! Bonus 10 AIF reward!';
-                surprise.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:linear-gradient(45deg,#00ff9d,#3498db);color:white;padding:20px;border-radius:15px;font-size:18px;font-weight:bold;z-index:10000;animation:bounceIn 0.5s ease;';
-                document.body.appendChild(surprise);
-                setTimeout(() => surprise.remove(), 3000);
-                clickCount = 0;
-            }
-        });
-
-        // Add keyboard shortcuts
-        document.addEventListener('keydown', (e) => {
-            if (e.ctrlKey || e.metaKey) {
-                switch(e.key) {
-                    case 'Enter':
-                        e.preventDefault();
-                        document.querySelector('.danger-button').click();
-                        break;
-                    case 'm':
-                        e.preventDefault();
-                        mobileMenu.classList.toggle('open');
-                        break;
-                }
-            }
-        });
-
-        // Performance monitoring
-        window.addEventListener('load', () => {
-            const loadTime = performance.now();
-            if (loadTime > 3000) {
-                console.log('Page loading slower than expected, optimizing...');
-            }
-        });
     </script>
-
-    <!-- Add some CSS animations -->
-    <style>
-        @keyframes bounceIn {
-            0% { transform: translate(-50%, -50%) scale(0.3); opacity: 0; }
-            50% { transform: translate(-50%, -50%) scale(1.05); }
-            70% { transform: translate(-50%, -50%) scale(0.9); }
-            100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-        }
-
-        .scroll-reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-
-        .scroll-reveal.revealed {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #1a1a1a;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: linear-gradient(45deg, var(--primary), var(--secondary));
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: linear-gradient(45deg, var(--secondary), var(--primary));
-        }
-
-        /* Loading animation for images */
-        img {
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        img.loaded {
-            opacity: 1;
-        }
-
-        /* Pulse animation for important elements */
-        .pulse-slow {
-            animation: pulse-slow 4s ease-in-out infinite;
-        }
-
-        @keyframes pulse-slow {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.02); }
-        }
-
-        /* Gradient animation */
-        .animated-gradient {
-            background-size: 200% 200%;
-            animation: gradient-shift 3s ease infinite;
-        }
-
-        @keyframes gradient-shift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        /* Typewriter effect */
-        .typewriter {
-            overflow: hidden;
-            border-right: 2px solid var(--primary);
-            white-space: nowrap;
-            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-        }
-
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-
-        @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: var(--primary); }
-        }
-
-        /* Hover effects for better interactivity */
-        .interactive-hover {
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-        }
-
-        .interactive-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 35px rgba(0, 255, 157, 0.3);
-        }
-
-        /* Success animation */
-        .success-animation {
-            animation: success-bounce 0.6s ease;
-        }
-
-        @keyframes success-bounce {
-            0% { transform: scale(1); }
-            30% { transform: scale(1.1); }
-            60% { transform: scale(0.95); }
-            100% { transform: scale(1); }
-        }
-    </style>
 </body>
 </html>
+[file content end]
