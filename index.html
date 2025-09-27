@@ -1,5 +1,3 @@
-[file name]: aif-fusion-homepage-fixed.html
-[file content begin]
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -505,23 +503,13 @@
                         </div>
                     </div>
 
-                    <!-- Urgent Alert Bar -->
-                    <div class="mb-8">
-                        <div class="bg-red-600 text-white px-4 py-2 rounded-full inline-block animate-pulse">
-                            <i class="fas fa-exclamation-triangle mr-2"></i>
-                            <strong>緊急通知：今日限額10,000名額，已佔用</strong>
-                            <span id="taken-spots" class="font-bold">187</span>
-                            <strong>個名額！</strong>
-                        </div>
-                    </div>
-
                     <h1 class="text-4xl md:text-6xl font-black mb-6">
                         <span class="gradient-text">Flow AI驅動</span><br>
                         學習賺取AIF
                     </h1>
                     
                     <h2 class="text-xl md:text-2xl mb-8 text-yellow-300 font-bold">
-                        透過與Flow狐角狸AI的互動學習，深入了解香港AI國際電影節生態系統，完成10輪學習課程，每輪可獲得1-100 AIF代幣獎勵
+                        透過與Flow獨角獸AI的互動學習，深入了解香港AI國際電影節生態系統，完成10輪學習課程，每輪可獲得1-100 AIF代幣獎勵
                     </h2>
 
                     <!-- Real-time Stats Scroll -->
@@ -581,11 +569,6 @@
                             <i class="fas fa-rocket mr-3"></i>
                             立即搶奪AIF空投 - 免費註冊
                         </button>
-                        <div class="text-center">
-                            <button class="bg-transparent border-2 border-primary px-8 py-3 rounded-full text-primary hover:bg-primary hover:text-white transition">
-                                <i class="fas fa-play mr-2"></i>觀看他人收益展示
-                            </button>
-                        </div>
                     </div>
 
                     <!-- Key Stats -->
@@ -609,7 +592,7 @@
                     <div class="flow-character floating">
                         <i class="fas fa-robot"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">重見Flow狐角狸</h3>
+                    <h3 class="text-2xl font-bold mb-4">重見Flow獨角獸</h3>
                     <p class="text-gray-300 mb-6">
                         你的專屬AI學習夥伴，基於香港AI電影學院教學邏輯，提供個性化的互動教學體驗。
                     </p>
@@ -1471,9 +1454,6 @@
             if (currentSpots > 0) {
                 document.getElementById('remaining-spots').textContent = Math.max(0, currentSpots - Math.floor(Math.random() * 10)).toLocaleString();
             }
-            
-            const takenSpots = parseInt(document.getElementById('taken-spots').textContent.replace(',', ''));
-            document.getElementById('taken-spots').textContent = (takenSpots + Math.floor(Math.random() * 20)).toLocaleString();
         }
 
         // Update real-time stats
@@ -1591,4 +1571,3 @@
     </script>
 </body>
 </html>
-[file content end]
